@@ -1,9 +1,9 @@
 /* TEAM */
                             
-Your title: Your name.                        
+Your title: Dale Markowitz                       
 Site: email, link to a contact form, etc.                         
-Twitter: your Twitter username.                        
-Location: City, Country.
+Twitter: dalequark                       
+Location: Princeton, NJ
 
 
 /* THANKS */

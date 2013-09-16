@@ -29,14 +29,9 @@
 	<!-- Header
 	    ================================================== -->
 
-    <nav role="navigation">
-    </nav>
+	{% include navbar.html %}
 
-	<header role="banner">
-
-	</header>
-
-	{{ content }}
+	{% include mainContent.html %}
 
 	<footer role="contentinfo">
 
@@ -50,6 +45,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>if (!window.jQuery) {document.write('<script src="/js/jquery.min.js"><\/script>');}</script>
 	<script src="/js/custom.js"></script>
+	<script src="/js/knockout.js"></script>
 
     <!-- Analytics
     ================================================== -->
