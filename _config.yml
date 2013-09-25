@@ -1,33 +1,19 @@
-title:            Balzac
-tagline:          A beautiful theme.
-description:      Describe your website.
-#Comment out url when working locally to resolve base urls correctly
-url: http://jekyll.gtat.me
+title:           Unquarked
+tagline:         by Dale Markowitz
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
-  avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        ctrunsthis        
-  github:         coletownsend       
-  instagram:      ctrunsthis     
-  dribbble:       coletownsend
-  disqus:         balzac
-  # Plug in your disqus shortname!
+  name:           Dale Markowitz
+  bio:            "Nerd"
+  twitter:        dalequark   
+  github:         dalequark      
   
 
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about
   - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
-    external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
+    url: https://github.com/dalequark
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
