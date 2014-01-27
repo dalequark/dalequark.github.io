@@ -18,7 +18,20 @@ Contents
 // --------------------------------------------------
 
 body{
-	background-color: #FFF;
+	background-image: url("images/concretewall.png");
+	font-family: Arial;
+	color:#B6B9AA;
+}
+.container{
+	margin-top: 6%;
+	width: 73%;
+	border: dotted;
+	border-top: none;
+	border-width: 1px;
+	border-bottom: none;
+	border-bottom-color: #FFF;
+	border-color: #B4B4B4;
+	padding-left: 6%;
 }
 
 // 2. Navigation
@@ -29,6 +42,53 @@ body{
 // 3. Pages
 // --------------------------------------------------
 
+// index.html
+
+	//blog excerpts
+	.excerpts{
+		.entry{
+			width: 47%;
+			display: inline-block;
+			padding: 10px;
+
+			h1{
+				font-size: 23px;
+				font-weight: 300;
+			}
+			h2
+			{
+				font-size: 13px;
+			}
+		}
+		.divide
+		{
+			width: 10px;
+			display: inline-block;
+		}
+		.row{
+			margin-bottom: 10px;
+		}
+	}
 
 // 4. Shared Styles
 // --------------------------------------------------
+
+// Header
+.header{
+	display: inline;
+	h1{
+		color: #F0F8D6;	
+		font-size: 100px;
+		height: 20%;
+		font-family: Astloch;
+		//font-face:
+		//background:
+	}
+	h2
+	{
+		font-size:15px;
+
+	}
+}
+
+

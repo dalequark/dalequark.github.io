@@ -1,43 +1,7 @@
-title:           Unquarked
-tagline:         by Dale Markowitz
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+name: Unquarked
+markdown: redcarpet
+pygments: true
+paginate: 10 # pagination basted on number of posts
+exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss', 'bootstrap.scss'] # files to exclude
 
-# Owner/author information
-owner:
-  name:           Dale Markowitz
-  bio:            "Nerd"
-  twitter:        dalequark   
-  github:         dalequark      
-  
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Github
-    url: https://github.com/dalequark
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]

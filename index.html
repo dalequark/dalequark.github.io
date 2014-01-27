@@ -1,9 +1,22 @@
 ---
+name: Home
 layout: default
-title: Home
 ---
-<!-- Content
-	================================================== -->
 
-<h1> Goodnight Moon </h1>
-<p>	asldfjsdlfj sadfjsd asjdkf jasdkfj ajsjdkf jjjfk djfkasdf </p>
+
+<!-- Content
+    ================================================== -->
+		<div class="excerpts">
+			{% for post in site.posts %}
+				{% cycle "<div class='row'>", ""%}
+				{% cycle "", "<div class='divide'></div>"%}
+				<div class="entry">
+					<h1>{{ post.title }}</h1>
+					<h2 class="date">{{ post.date }}</h2>
+					<p>
+						{{ post.excerpt }}
+					</p>
+				</div>	
+				{% cycle "", "</div>" %}
+			{% endfor %}
+		</div>

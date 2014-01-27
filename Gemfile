@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
 
+gem 'sass'
 gem 'jekyll'
-gem 'jekyll-minibundle'
-gem 'coderay'
-gem 'rake'
