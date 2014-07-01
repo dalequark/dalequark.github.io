@@ -1,12 +1,12 @@
 title:        Unquarked
 tagline:      'Nerdspace by Dale Markowitz'
-description:  'An elegant open source and mobile first theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:  'Nerdspace by Dale Markowitz'
 url:          http://unquarked.com
 version:      1.1.1
 author:
   name:       ''
   email:      ''
-markdown:     rdiscount
+#markdown:     liquid
 permalink:    pretty
 pygments:     true
 paginate:     5
