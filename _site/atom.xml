@@ -4,7 +4,7 @@
  <title>Unquarked</title>
  <link href="http://unquarked.com/atom.xml" rel="self"/>
  <link href="http://unquarked.com/"/>
- <updated>2014-06-20T16:12:40-04:00</updated>
+ <updated>2014-07-01T11:09:02-04:00</updated>
  <id>http://unquarked.com</id>
  <author>
    <name></name>
@@ -13,115 +13,110 @@
 
  
  <entry>
-   <title>Hello, world!</title>
-   <link href="http://unquarked.com/2013/12/28/hello-world/"/>
-   <updated>2013-12-28T00:00:00-05:00</updated>
-   <id>http://unquarked.com/2013/12/28/hello-world</id>
-   <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://andhyde.com&quot;&gt;Hyde&lt;/a&gt;, the perfect companion to &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, the popular static site generator. Hyde is an elegant, open source, mobile first theme for Jekyll. It includes lightweight styles and placeholder content to get you up and running with a simple blog in no time.&lt;/p&gt;
+   <title>Mavericks Bbb Usb Tethering</title>
+   <link href="http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering/"/>
+   <updated>2014-07-01T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering</id>
+   <content type="html">&lt;h1 id=&quot;beaglebone_black_internet_over_usb_in_osx_mavericks&quot;&gt;BeagleBone Black Internet over USB in OSX Mavericks&lt;/h1&gt;
 
-&lt;h3 id=&quot;features&quot;&gt;Features&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Complete Jekyll setup included (layouts, config, 404, RSS feed, posts, and page)&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://github.com/mdo/hyde#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-
-&lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/mdo/hyde#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-
-&lt;li&gt;Mobile first design and development, so it works great on all devices&lt;/li&gt;
-
-&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
-
-&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
-
-&lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;browser_support&quot;&gt;Browser support&lt;/h3&gt;
-
-&lt;p&gt;Hyde is a rather forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
-
-&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
-
-&lt;p&gt;Docs for setting up and customizing Hyde can be found in the &lt;a href=&quot;https://github.com/mdo/hyde#readme&quot;&gt;project readme on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Find out more and &lt;a href=&quot;https://github.com/mdo/hyde&quot;&gt;download a copy&lt;/a&gt; today from GitHub.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Example content</title>
-   <link href="http://unquarked.com/2012/02/07/example-content/"/>
-   <updated>2012-02-07T00:00:00-05:00</updated>
-   <id>http://unquarked.com/2012/02/07/example-content</id>
-   <content type="html">&lt;p&gt;This blog post shows a few different types of content that’s supported and styled with Hyde. Basic typography, images, and code are all supported.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&#39;#&#39;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Curabitur blandit tempus porttitor. &lt;strong&gt;Nullam quis risus eget urna mollis&lt;/strong&gt; ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Etiam porta &lt;em&gt;sem malesuada magna&lt;/em&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
-
-&lt;h2 id=&quot;heading&quot;&gt;Heading&lt;/h2&gt;
-
-&lt;p&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
-
-&lt;h3 id=&quot;subheading&quot;&gt;Sub-heading&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;js&#39;&gt;&lt;span class=&#39;c1&#39;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
-
-&lt;span class=&#39;c1&#39;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
-&lt;span class=&#39;kd&#39;&gt;var&lt;/span&gt; &lt;span class=&#39;nx&#39;&gt;adder&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;nb&#39;&gt;Function&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
-
-&lt;span class=&#39;c1&#39;&gt;// Call the function&lt;/span&gt;
-&lt;span class=&#39;nx&#39;&gt;adder&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;2&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;6&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
-&lt;span class=&#39;c1&#39;&gt;// &amp;gt; 8&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
-
-&lt;h3 id=&quot;subheading_2&quot;&gt;Sub-heading&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
-
-&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
-
-&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
+&lt;p&gt;For quite some time, I was able to easily access the Internet from my BeagleBone Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook via an ethernet cable. After upgrading to Mavericks 10.9.3, though, this setup completely broke. After scouring the Internet and finding nothing to my remedy, however, I did a little digging with tcpdump and found that a combination of port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to enable port forwarding, disable Internet Sharing, and change the settings in the OSX routing tool pfctl to enable a NAT). Here’s how you can get your BeagleBone Black talking to the web over the provided USB mini cable:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you. The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got) by default sets up a DHCP server, assigns itself the IP of 192.168.7.2, and hosts a static “Getting Started” page at this address. If this page doesn’t load, try reinstalling the operating system &lt;a href=&quot;http://beagleboard.org/getting-started#update&quot;&gt;here&lt;/a&gt;. In any case, by default you should be able to ssh into the BBB with the username ‘root’:&lt;/p&gt;
 
-&lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
+&lt;p&gt;ssh root@192.168.7.2&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once you can ssh into the ‘bone, you need only to tell your MacBook to forward the BBB’s connection to the outside world (easier said than done). In Terminal, enter:&lt;/p&gt;
+
+&lt;p&gt;sudo sysctl -w net.inet.ip.forwarding=1&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Want to see something else added? &lt;a href=&#39;https://github.com/mdo/hyde/issues/new&#39;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="http://unquarked.com/2012/02/06/whats-jekyll/"/>
-   <updated>2012-02-06T00:00:00-05:00</updated>
-   <id>http://unquarked.com/2012/02/06/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;This instructs your MacBook to allow packets sent from the BBB over the local USB network to be forwarded to the external network.&lt;/p&gt;
 
-&lt;p&gt;&amp;gt; Jekyll is a simple, blog aware, static site generator. It takes a template directory [] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In Terminal on the Mac, run:&lt;/p&gt;
 
-&lt;p&gt;It’s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
+&lt;p&gt;ifconfig&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;Identify the name of the interface that a. your BBB is connected to and b. your WiFi/ethernet is running on. For example, I’m connected to wifi on en0 because the ifconfig entry shows my IP address under “inet”:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;en0: flags=8963&amp;lt;UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST&amp;gt; mtu 1500
+	ether 14:10:9f:e8:e1:62 
+	inet6 fe80::1610:9fff:fee8:e162%en0 prefixlen 64 scopeid 0x4 
+	inet 10.9.125.20 netmask 0xfffe0000 broadcast 10.9.255.255
+	nd6 options=1&amp;lt;PERFORMNUD&amp;gt;
+	media: autoselect
+	status: active&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this inet address too):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;en8: flags=863&amp;lt;UP,BROADCAST,SMART,RUNNING,SIMPLEX&amp;gt; mtu 1486
+	ether 7c:66:9d:6e:ff:58 
+	inet 192.168.7.1 netmask 0xfffffffc broadcast 192.168.7.3
+	media: autoselect
+	status: active&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The problem I had was that my MacBook was not propertly translating the IP address of the BBB’s packets. In order for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs to change the IP address on the BBB’s outgoing packets from 192.168.7.2 to it’s own IP address (in my case, 10.9.125.20). This is because 192.168.7.2 is a a &lt;em&gt;private&lt;/em&gt; IP address that only the local USB network understands. We need to enable a network address translator on the Mac (a NAT) in order to make the BBB’s packets routable on the larger WiFi network.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Prior to OSX Lion, this would be done with ipfw/natd. Now these tools have been outdated and replaced with pfctl. We change pfctl’s config file to tell it to translate all packets from the BBB on en8 to an address managed by en0:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo nano /etc/pf.conf&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add the line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nat on en0 from en8:network to any -&amp;gt; (en0)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where en0 is the interface connected to WiFi/ethernet, and en8 is the interface connected to the BBB, underneath:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scrub-anchor &amp;quot;com.apple/*&amp;quot;
+nat-anchor &amp;quot;com.apple/*&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo pfctl -f /etc/pf.conf &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If everything worked, the BBB should be connected. From your SSH session with the BBB, test out the connection:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ping 8.8.8.8&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you get an error like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;network is unreachable&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you may need to set the network gateway on the BBB:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ip route add default via 192.168.7.1&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the BBB hangs on the ping, you may want to inspect its packets from your Mac. On OSX, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tcpdump -vv -i en8&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and try the ping again from the BBB. Make sure there are incomping packets from 192.168.7.2:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;192.168.7.2.http &amp;gt; 192.168.7.1.50223: Flags [.], cksum 0xbd2f (correct), seq 10, ack 19, win 243, options [nop,nop,TS val 1824893 ecr 455837959], length 0&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If not, the error is likely on the side of the BBB. If you see packets from the BBB from above but ping still hangs, you might want to check that your NAT was actually enabled. Run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tcpdump -vv -i en0 icmp&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and run ping again from the BBB (also try to avoid using navigating to different web pages or making web requests).&lt;br /&gt;You should see:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[an IP or address that is NOT 192.168.7.2] &amp;gt; google-public-dns-a.google.com: ICMP echo request, id 5921, seq 48, length 64
+11:02:25.640761 IP (tos 0x0, ttl 35, id 0, offset 0, flags [none], proto ICMP (1), length 84)
+    google-public-dns-a.google.com &amp;gt; [an IP or address that is NOT 192.168.7.2]: ICMP echo reply, id 5921, seq 48, length 64&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you see requests only from 192.168.7.2, your NAT is to blame. Try restarting your computer and reloading pfctl.&lt;/p&gt;
+
+&lt;p&gt;Hope that helps!&lt;/p&gt;</content>
  </entry>
  
 
