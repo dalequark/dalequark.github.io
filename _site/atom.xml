@@ -4,7 +4,7 @@
  <title>Unquarked</title>
  <link href="http://unquarked.com/atom.xml" rel="self"/>
  <link href="http://unquarked.com/"/>
- <updated>2014-07-01T11:09:02-04:00</updated>
+ <updated>2014-07-02T18:32:27-04:00</updated>
  <id>http://unquarked.com</id>
  <author>
    <name></name>
@@ -13,13 +13,11 @@
 
  
  <entry>
-   <title>Mavericks Bbb Usb Tethering</title>
+   <title>BeagleBone Black Internet over USB in OSX Mavericks</title>
    <link href="http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering/"/>
    <updated>2014-07-01T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering</id>
-   <content type="html">&lt;h1 id=&quot;beaglebone_black_internet_over_usb_in_osx_mavericks&quot;&gt;BeagleBone Black Internet over USB in OSX Mavericks&lt;/h1&gt;
-
-&lt;p&gt;For quite some time, I was able to easily access the Internet from my BeagleBone Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook via an ethernet cable. After upgrading to Mavericks 10.9.3, though, this setup completely broke. After scouring the Internet and finding nothing to my remedy, however, I did a little digging with tcpdump and found that a combination of port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to enable port forwarding, disable Internet Sharing, and change the settings in the OSX routing tool pfctl to enable a NAT). Here’s how you can get your BeagleBone Black talking to the web over the provided USB mini cable:&lt;/p&gt;
+   <content type="html">&lt;p&gt;For quite some time, I was able to easily access the Internet from my BeagleBone Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook via an ethernet cable. After upgrading to Mavericks 10.9.3, though, this setup completely broke. After scouring the Internet and finding nothing to my remedy, however, I did a little digging with tcpdump and found that a combination of port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to enable port forwarding, disable Internet Sharing, and change the settings in the OSX routing tool pfctl to enable a NAT). Here’s how you can get your BeagleBone Black talking to the web over the provided USB mini cable:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;

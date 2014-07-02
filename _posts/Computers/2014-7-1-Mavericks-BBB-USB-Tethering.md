@@ -1,4 +1,9 @@
-# BeagleBone Black Internet over USB in OSX Mavericks #
+---
+layout: post
+title:  BeagleBone Black Internet over USB in OSX Mavericks
+tags: BeagleBoneBlack Linux Networking
+---
+
 
 For quite some time, I was able to easily access the Internet from my BeagleBone
 Black by enabling "Internet Sharing" in OSX Lion and attaching my BBB and MacBook

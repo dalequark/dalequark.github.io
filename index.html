@@ -13,7 +13,9 @@ layout: default
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.excerpt }}
+    {{ post.tags | array_to_sentence_string }}
+
   </div>
   {% endfor %}
 </div>
