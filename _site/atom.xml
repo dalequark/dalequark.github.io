@@ -4,7 +4,7 @@
  <title>Unquarked</title>
  <link href="http://unquarked.com/atom.xml" rel="self"/>
  <link href="http://unquarked.com/"/>
- <updated>2014-07-02T18:32:27-04:00</updated>
+ <updated>2014-11-09T13:35:16-07:00</updated>
  <id>http://unquarked.com</id>
  <author>
    <name></name>
@@ -13,37 +13,116 @@
 
  
  <entry>
+   <title>Princeton Makers Collective at the Activities Faire</title>
+   <link href="http://unquarked.com/2014/12/09/Activities-Faire/"/>
+   <updated>2014-12-09T00:00:00-07:00</updated>
+   <id>http://unquarked.com/2014/12/09/Activities-Faire</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sigmaxi</title>
+   <link href="http://unquarked.com/hello/2014/11/09/sigmaxi/"/>
+   <updated>2014-11-09T00:00:00-07:00</updated>
+   <id>http://unquarked.com/hello/2014/11/09/sigmaxi</id>
+   <content type="html">&lt;p&gt;Presented BeagleCache at Sigma Xi Conference in Glendale – went well&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>EEG Training Day!</title>
+   <link href="http://unquarked.com/brains/2014/09/30/EEG-Training/"/>
+   <updated>2014-09-30T00:00:00-07:00</updated>
+   <id>http://unquarked.com/brains/2014/09/30/EEG-Training</id>
+   <content type="html">&lt;p&gt;Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.
+He was a good sport about it, even after he couldn’t get the goop out of his hair.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Maker Faire 2014, NYC</title>
+   <link href="http://unquarked.com/2014/09/21/MakerFaire/"/>
+   <updated>2014-09-21T00:00:00-07:00</updated>
+   <id>http://unquarked.com/2014/09/21/MakerFaire</id>
+   <content type="html">&lt;p&gt;Maker Faire has changed dramatically since my last visit in 2012, which was to be expected
+since the same goes for electronics prototyping as a whole.  Back in 2012, RadioShack might
+sell the Arduino Uno and maybe a single shield.  &lt;/p&gt;
+
+&lt;p&gt;The most interesting change in Maker Faire this year, in my mind, are the 3D printing displays.
+On my first visit, the 3D printing tent consisted of n-thousand different types of 3D printers,
+but frankly, after you’ve seen one you’ve seen them all.  This year, it was easy to see that
+hobbyists had evolved from “Who can make the coolest 3D printer” to “what neat things can I do
+now that I have one?”  Some of my favorite applications of 3D printing are below:&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Making an Infrasonic Pixel Necklace</title>
+   <link href="http://unquarked.com/2014/07/28/pixel-necklace/"/>
+   <updated>2014-07-28T00:00:00-07:00</updated>
+   <id>http://unquarked.com/2014/07/28/pixel-necklace</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Headphone wires are the perfect necklace chains</title>
+   <link href="http://unquarked.com/2014/07/15/headphone-wires/"/>
+   <updated>2014-07-15T00:00:00-07:00</updated>
+   <id>http://unquarked.com/2014/07/15/headphone-wires</id>
+   <content type="html">&lt;p&gt;Disclaimer: No they aren’t.  But for what I wanted to do, they were the only (attractive) game in town.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>BeagleBone Black Internet over USB in OSX Mavericks</title>
    <link href="http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering/"/>
-   <updated>2014-07-01T00:00:00-04:00</updated>
+   <updated>2014-07-01T00:00:00-07:00</updated>
    <id>http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering</id>
-   <content type="html">&lt;p&gt;For quite some time, I was able to easily access the Internet from my BeagleBone Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook via an ethernet cable. After upgrading to Mavericks 10.9.3, though, this setup completely broke. After scouring the Internet and finding nothing to my remedy, however, I did a little digging with tcpdump and found that a combination of port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to enable port forwarding, disable Internet Sharing, and change the settings in the OSX routing tool pfctl to enable a NAT). Here’s how you can get your BeagleBone Black talking to the web over the provided USB mini cable:&lt;/p&gt;
+   <content type="html">&lt;p&gt;For quite some time, I was able to easily access the Internet from my BeagleBone
+Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook
+via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup 
+completely broke.  After scouring the Internet and finding nothing to my remedy,
+however, I did a little digging with tcpdump and found that a combination of 
+port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to 
+enable port forwarding, disable Internet Sharing, and change the settings in the 
+OSX routing tool pfctl to enable a NAT).  Here’s how
+you can get your BeagleBone Black talking to the web over the provided USB mini cable:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you. The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got) by default sets up a DHCP server, assigns itself the IP of 192.168.7.2, and hosts a static “Getting Started” page at this address. If this page doesn’t load, try reinstalling the operating system &lt;a href=&quot;http://beagleboard.org/getting-started#update&quot;&gt;here&lt;/a&gt;. In any case, by default you should be able to ssh into the BBB with the username ‘root’:&lt;/p&gt;
+  &lt;li&gt;
+    &lt;p&gt;Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you. 
+The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got) 
+by default sets up a DHCP server, assigns itself the IP of 192.168.7.2, and hosts a static
+“Getting Started” page at this address.  If this page doesn’t load, try reinstalling the operating
+system &lt;a href=&quot;http://beagleboard.org/getting-started#update&quot;&gt;here&lt;/a&gt;.  In any case, by default you should
+be able to ssh into the BBB with the username ‘root’:&lt;/p&gt;
 
-&lt;p&gt;ssh root@192.168.7.2&lt;/p&gt;
-&lt;/li&gt;
+    &lt;p&gt;ssh root@192.168.7.2&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once you can ssh into the ‘bone, you need only to tell your MacBook to forward the BBB’s
+connection to the outside world (easier said than done).  In Terminal, enter:&lt;/p&gt;
 
-&lt;li&gt;
-&lt;p&gt;Once you can ssh into the ‘bone, you need only to tell your MacBook to forward the BBB’s connection to the outside world (easier said than done). In Terminal, enter:&lt;/p&gt;
-
-&lt;p&gt;sudo sysctl -w net.inet.ip.forwarding=1&lt;/p&gt;
-&lt;/li&gt;
+    &lt;p&gt;sudo sysctl -w net.inet.ip.forwarding=1&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;This instructs your MacBook to allow packets sent from the BBB over the local USB network to be forwarded to the external network.&lt;/p&gt;
+&lt;p&gt;This instructs your MacBook to allow packets sent from the BBB over the local USB network to be
+forwarded to the external network.  &lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;In Terminal on the Mac, run:&lt;/p&gt;
+  &lt;li&gt;
+    &lt;p&gt;In Terminal on the Mac, run:&lt;/p&gt;
 
-&lt;p&gt;ifconfig&lt;/p&gt;
-&lt;/li&gt;
+    &lt;p&gt;ifconfig&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Identify the name of the interface that a. your BBB is connected to and b. your WiFi/ethernet is running on. For example, I’m connected to wifi on en0 because the ifconfig entry shows my IP address under “inet”:&lt;/p&gt;
+&lt;p&gt;Identify the name of the interface that a. your BBB is connected to and b. your WiFi/ethernet is running on.
+For example, I’m connected to wifi on en0 because the ifconfig entry shows my IP address under “inet”:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;en0: flags=8963&amp;lt;UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST&amp;gt; mtu 1500
 	ether 14:10:9f:e8:e1:62 
@@ -51,70 +130,105 @@
 	inet 10.9.125.20 netmask 0xfffe0000 broadcast 10.9.255.255
 	nd6 options=1&amp;lt;PERFORMNUD&amp;gt;
 	media: autoselect
-	status: active&lt;/code&gt;&lt;/pre&gt;
+	status: active
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this inet address too):&lt;/p&gt;
+&lt;p&gt;The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this 
+inet address too):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;en8: flags=863&amp;lt;UP,BROADCAST,SMART,RUNNING,SIMPLEX&amp;gt; mtu 1486
 	ether 7c:66:9d:6e:ff:58 
 	inet 192.168.7.1 netmask 0xfffffffc broadcast 192.168.7.3
 	media: autoselect
-	status: active&lt;/code&gt;&lt;/pre&gt;
+	status: active
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
-&lt;li&gt;The problem I had was that my MacBook was not propertly translating the IP address of the BBB’s packets. In order for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs to change the IP address on the BBB’s outgoing packets from 192.168.7.2 to it’s own IP address (in my case, 10.9.125.20). This is because 192.168.7.2 is a a &lt;em&gt;private&lt;/em&gt; IP address that only the local USB network understands. We need to enable a network address translator on the Mac (a NAT) in order to make the BBB’s packets routable on the larger WiFi network.&lt;/li&gt;
+  &lt;li&gt;The problem I had was that my MacBook was not propertly translating the IP address of the BBB’s packets.  In order
+for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs 
+to change the IP address on the BBB’s outgoing packets from 192.168.7.2 to it’s own IP address (in my case, 10.9.125.20).
+This is because 192.168.7.2 is a a &lt;em&gt;private&lt;/em&gt; IP address that only the local USB network understands.  We need to enable 
+a network address translator on the Mac (a NAT) in order to make the BBB’s packets routable on the larger WiFi network.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Prior to OSX Lion, this would be done with ipfw/natd. Now these tools have been outdated and replaced with pfctl. We change pfctl’s config file to tell it to translate all packets from the BBB on en8 to an address managed by en0:&lt;/p&gt;
+&lt;p&gt;Prior to OSX Lion, this would be done with ipfw/natd.  Now these tools have been outdated and replaced with pfctl.  We
+change pfctl’s config file to tell it to translate all packets from the BBB on en8 to an address managed by en0:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;sudo nano /etc/pf.conf&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo nano /etc/pf.conf
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Add the line:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;nat on en0 from en8:network to any -&amp;gt; (en0)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;nat on en0 from en8:network to any -&amp;gt; (en0)
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;where en0 is the interface connected to WiFi/ethernet, and en8 is the interface connected to the BBB, underneath:&lt;/p&gt;
+&lt;p&gt;where en0 is the interface connected to WiFi/ethernet, and en8 is the interface connected to the BBB,
+underneath:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;scrub-anchor &amp;quot;com.apple/*&amp;quot;
-nat-anchor &amp;quot;com.apple/*&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;scrub-anchor &quot;com.apple/*&quot;
+nat-anchor &quot;com.apple/*&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now run:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;sudo pfctl -f /etc/pf.conf &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo pfctl -f /etc/pf.conf 
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If everything worked, the BBB should be connected. From your SSH session with the BBB, test out the connection:&lt;/p&gt;
+&lt;p&gt;If everything worked, the BBB should be connected.  From your SSH session with the BBB, test out the connection:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;ping 8.8.8.8&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;ping 8.8.8.8
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;If you get an error like:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;network is unreachable&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;network is unreachable
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;you may need to set the network gateway on the BBB:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;ip route add default via 192.168.7.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;ip route add default via 192.168.7.1
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If the BBB hangs on the ping, you may want to inspect its packets from your Mac. On OSX, run:&lt;/p&gt;
+&lt;p&gt;If the BBB hangs on the ping, you may want to inspect its packets from your Mac.  On
+OSX, run:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;tcpdump -vv -i en8&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;tcpdump -vv -i en8
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and try the ping again from the BBB. Make sure there are incomping packets from 192.168.7.2:&lt;/p&gt;
+&lt;p&gt;and try the ping again from the BBB.  Make sure there are incomping packets from 
+192.168.7.2:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;192.168.7.2.http &amp;gt; 192.168.7.1.50223: Flags [.], cksum 0xbd2f (correct), seq 10, ack 19, win 243, options [nop,nop,TS val 1824893 ecr 455837959], length 0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;192.168.7.2.http &amp;gt; 192.168.7.1.50223: Flags [.], cksum 0xbd2f (correct), seq 10, ack 19, win 243, options [nop,nop,TS val 1824893 ecr 455837959], length 0
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If not, the error is likely on the side of the BBB. If you see packets from the BBB from above but ping still hangs, you might want to check that your NAT was actually enabled. Run:&lt;/p&gt;
+&lt;p&gt;If not, the error is likely on the side of the BBB.  If you see packets from the BBB from above but
+ping still hangs, you might want to check that your NAT was actually enabled.  Run:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;tcpdump -vv -i en0 icmp&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;tcpdump -vv -i en0 icmp
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and run ping again from the BBB (also try to avoid using navigating to different web pages or making web requests).&lt;br /&gt;You should see:&lt;/p&gt;
+&lt;p&gt;and run ping again from the BBB (also try to avoid using navigating to different web pages or making web requests).&lt;br /&gt;
+You should see:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[an IP or address that is NOT 192.168.7.2] &amp;gt; google-public-dns-a.google.com: ICMP echo request, id 5921, seq 48, length 64
 11:02:25.640761 IP (tos 0x0, ttl 35, id 0, offset 0, flags [none], proto ICMP (1), length 84)
-    google-public-dns-a.google.com &amp;gt; [an IP or address that is NOT 192.168.7.2]: ICMP echo reply, id 5921, seq 48, length 64&lt;/code&gt;&lt;/pre&gt;
+    google-public-dns-a.google.com &amp;gt; [an IP or address that is NOT 192.168.7.2]: ICMP echo reply, id 5921, seq 48, length 64
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If you see requests only from 192.168.7.2, your NAT is to blame. Try restarting your computer and reloading pfctl.&lt;/p&gt;
+&lt;p&gt;If you see requests only from 192.168.7.2, your NAT is to blame.  Try restarting your computer and reloading pfctl.&lt;/p&gt;
 
-&lt;p&gt;Hope that helps!&lt;/p&gt;</content>
+&lt;p&gt;Hope that helps!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>A Single Channel EEG On the Cheap</title>
+   <link href="http://unquarked.com/2014/06/20/EEG-Cheap/"/>
+   <updated>2014-06-20T00:00:00-07:00</updated>
+   <id>http://unquarked.com/2014/06/20/EEG-Cheap</id>
+   <content type="html">
+</content>
  </entry>
  
 

@@ -10,36 +10,26 @@
 
 
         <h1>{{ site.title }}</h1>
-        <p class="lead">{{ site.description }}</p>
+
+          <div class="masthead-nav">
+
+              <a href="/">Home</a>
+
+
+              <a href="/about">About</a>
+
+
+              <a href="https://github.com/dalequark">GitHub</a>
+          </div>
 
         <div class="colophon">
-          <ul class="colophon-links">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="https://github.com/dalequark">GitHub</a>
-            </li>
-            <li>
 
-            </li>
-          </ul>
-
-
-          {% for post in site.posts %}
-            <p>
-            <a href = {{post.path}}>{{ post.title }}</a>
-            </p>
+          {% for category in site.categories %}
+            <p>{{ category[0] }}</p>
           {% endfor %}
 
 
 
-          <p>
-            Using Theme <a href="https://github.com/mdo/hyde">Hyde</a>
-          </p>
         </div>
       </div>
     </header>
