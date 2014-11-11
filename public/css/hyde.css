@@ -53,7 +53,6 @@ body {
   background-image: url("orion.png");
   padding: 0;
   background-repeat: no-repeat;
-  background-position: fixed;
 }
 
 body {
@@ -235,8 +234,6 @@ a:focus {
 .masthead {
   color: #0B0A0A;
   background-color: none;
-  background-position: fixed;
-  background-image: url("bigstars.png");
 }
 
 .masthead-nav {
@@ -322,6 +319,7 @@ a:focus {
  */
 
 .content {
+  background: none;
   padding: 40px 20px;
 }
 
