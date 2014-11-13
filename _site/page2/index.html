@@ -28,7 +28,7 @@
       <div class="masthead-inner">
 
 
-        <h1>Unquarked</h1>
+        <h1><a href="/">Unquarked</a></h1>
 
           <div class="masthead-nav">
 
@@ -44,9 +44,19 @@
         <div class="colophon">
 
           
-            <p>brains</p>
+            <p class="colophon-links" onclick="showPosts(this)">Electronics</p>
           
-            <p>hello</p>
+            <p class="colophon-links" onclick="showPosts(this)">Networking</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Linux</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">3D printing</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Brains</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">BeagleBoneBlack</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Princeton Makers Collective</p>
           
 
 
@@ -57,6 +67,23 @@
 
     <div class="content container">
       <div class="posts">
+
+  
+    
+    <div class="post">
+      <h1>
+        <a href="/2014/07/28/pixel-necklace/">
+          Making an Infrasonic Pixel Necklace
+        </a>
+      </h1>
+
+      <span class="post-date">28 Jul 2014</span>
+
+      
+
+      <div class="tags">Electronics</div>
+    </div>
+    
   
     
     <div class="post">
@@ -71,8 +98,7 @@
       <p>Disclaimer: No they aren’t.  But for what I wanted to do, they were the only (attractive) game in town.</p>
 
 
-      
-
+      <div class="tags">Electronics</div>
     </div>
     
   
@@ -88,17 +114,32 @@
 
       <p>For quite some time, I was able to easily access the Internet from my BeagleBone
 Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook
-via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup 
+via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup
 completely broke.  After scouring the Internet and finding nothing to my remedy,
-however, I did a little digging with tcpdump and found that a combination of 
-port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to 
-enable port forwarding, disable Internet Sharing, and change the settings in the 
+however, I did a little digging with tcpdump and found that a combination of
+port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to
+enable port forwarding, disable Internet Sharing, and change the settings in the
 OSX routing tool pfctl to enable a NAT).  Here’s how
 you can get your BeagleBone Black talking to the web over the provided USB mini cable:</p>
 
 
-      BeagleBoneBlack, Linux, and Networking
+      <div class="tags">BeagleBoneBlack, Linux, and Networking</div>
+    </div>
+    
+  
+    
+    <div class="post">
+      <h1>
+        <a href="/2014/06/21/eeg-headband/">
+          Poor Man's EEG Headpiece
+        </a>
+      </h1>
 
+      <span class="post-date">21 Jun 2014</span>
+
+      
+
+      <div class="tags">Brains and Electronics</div>
     </div>
     
   
@@ -114,17 +155,16 @@ you can get your BeagleBone Black talking to the web over the provided USB mini 
 
       
 
-      
-
+      <div class="tags">Electronics and Brains</div>
     </div>
     
   
-</div>
 
+</div>
 <!-- Pagination links -->
 <div class="pagination">
   
-    <span class="next">Older</span>
+    <a href="/page3" class="older">Older</a>
   
   
     
@@ -132,7 +172,19 @@ you can get your BeagleBone Black talking to the web over the provided USB mini 
     
   
 </div>
+
     </div>
 
   </body>
+
+  <script>
+    function showPosts(thisTag){
+      window.location.href="/";
+      thisTag.innerText;
+      for(child in $(".posts").children){
+        
+      }
+    }
+  </script>
+
 </html>

@@ -51,6 +51,7 @@ html,
 body {
   margin: 0;
   background-image: url("orion.png");
+  background-attachment: fixed;
   padding: 0;
   background-repeat: no-repeat;
 }
@@ -215,13 +216,13 @@ a {
 }
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color:#F2E6E6;
 }
 
 /* About page */
 
 .profpic {
-  
+
 }
 
 /*
@@ -245,10 +246,14 @@ a:focus {
 }
 
 /* Masthead content */
-.masthead h1 {
+.masthead h1 a{
   margin-top: 0;
   font-family: "Open Sans", Arial;
   font-size: 40px;
+}
+
+.masthead h1 a :hover{
+  text-decoration:none;
 }
 
 .masthead p {
@@ -276,13 +281,10 @@ a:focus {
   margin-top: 20px;
 }
 
-.colophon-links {
-  padding-left: 0;
-  list-style: none;
+.colophon-links p{
+  display: inline-block;
 }
-.colophon-links li {
-  color: inherit;
-}
+
 
 /* Responsive masthead */
 @media (min-width: 768px) {

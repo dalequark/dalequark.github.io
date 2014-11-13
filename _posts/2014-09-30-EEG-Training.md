@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EEG Training Day!
-categories: Brains
+tags: [Brains]
 ---
 
 Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.

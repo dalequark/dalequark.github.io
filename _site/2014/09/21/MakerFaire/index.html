@@ -28,7 +28,7 @@
       <div class="masthead-inner">
 
 
-        <h1>Unquarked</h1>
+        <h1><a href="/">Unquarked</a></h1>
 
           <div class="masthead-nav">
 
@@ -44,9 +44,19 @@
         <div class="colophon">
 
           
-            <p>brains</p>
+            <p class="colophon-links" onclick="showPosts(this)">Electronics</p>
           
-            <p>hello</p>
+            <p class="colophon-links" onclick="showPosts(this)">Networking</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Linux</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">3D printing</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Brains</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">BeagleBoneBlack</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Princeton Makers Collective</p>
           
 
 
@@ -69,8 +79,8 @@ but frankly, after you’ve seen one you’ve seen them all.  This year, it was 
 hobbyists had evolved from “Who can make the coolest 3D printer” to “what neat things can I do
 now that I have one?”  Some of my favorite applications of 3D printing are below:</p>
 
-
 </div>
+
 
 <div class="related">
   <h2>Related Posts</h2>
@@ -78,16 +88,7 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
     
       <li>
         <h3>
-          <a href="/2014/12/09/Activities-Faire/">
-            Princeton Makers Collective at the Activities Faire
-            <small>09 Dec 2014</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/hello/2014/11/09/sigmaxi/">
+          <a href="/2014/11/09/sigmaxi/">
             Sigmaxi
             <small>09 Nov 2014</small>
           </a>
@@ -96,9 +97,18 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
     
       <li>
         <h3>
-          <a href="/brains/2014/09/30/EEG-Training/">
+          <a href="/2014/09/30/EEG-Training/">
             EEG Training Day!
             <small>30 Sep 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/09/12/Activities-Faire/">
+            Princeton Makers Collective at the Activities Faire
+            <small>12 Sep 2014</small>
           </a>
         </h3>
       </li>
@@ -109,4 +119,15 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
     </div>
 
   </body>
+
+  <script>
+    function showPosts(thisTag){
+      window.location.href="/";
+      thisTag.innerText;
+      for(child in $(".posts").children){
+        
+      }
+    }
+  </script>
+
 </html>

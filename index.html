@@ -1,8 +1,11 @@
 ---
 layout: default
+
 ---
 
+
 <div class="posts">
+
   {% for post in paginator.posts %}
     {% if post.type == "tweet" %}
     <div class="tweet">{{post.content}}</div>
@@ -17,13 +20,12 @@ layout: default
       <span class="post-date">{{ post.date | date_to_string }}</span>
 
       {{ post.excerpt }}
-      {{ post.tags | array_to_sentence_string }}
-
+      <div class="tags">{{ post.tags | array_to_sentence_string }}</div>
     </div>
     {% endif %}
   {% endfor %}
-</div>
 
+</div>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}

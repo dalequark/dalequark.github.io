@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Maker Faire 2014, NYC
+tags: [Princeton Makers Collective]
 ---
 
 Maker Faire has changed dramatically since my last visit in 2012, which was to be expected
@@ -12,5 +13,3 @@ On my first visit, the 3D printing tent consisted of n-thousand different types 
 but frankly, after you've seen one you've seen them all.  This year, it was easy to see that
 hobbyists had evolved from "Who can make the coolest 3D printer" to "what neat things can I do
 now that I have one?"  Some of my favorite applications of 3D printing are below:
-
-  

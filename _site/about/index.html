@@ -28,7 +28,7 @@
       <div class="masthead-inner">
 
 
-        <h1>Unquarked</h1>
+        <h1><a href="/">Unquarked</a></h1>
 
           <div class="masthead-nav">
 
@@ -44,9 +44,19 @@
         <div class="colophon">
 
           
-            <p>brains</p>
+            <p class="colophon-links" onclick="showPosts(this)">Electronics</p>
           
-            <p>hello</p>
+            <p class="colophon-links" onclick="showPosts(this)">Networking</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Linux</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">3D printing</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Brains</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">BeagleBoneBlack</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Princeton Makers Collective</p>
           
 
 
@@ -69,4 +79,15 @@
     </div>
 
   </body>
+
+  <script>
+    function showPosts(thisTag){
+      window.location.href="/";
+      thisTag.innerText;
+      for(child in $(".posts").children){
+        
+      }
+    }
+  </script>
+
 </html>

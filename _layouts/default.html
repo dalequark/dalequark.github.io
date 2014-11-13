@@ -9,7 +9,7 @@
       <div class="masthead-inner">
 
 
-        <h1>{{ site.title }}</h1>
+        <h1><a href="/">{{ site.title }}</a></h1>
 
           <div class="masthead-nav">
 
@@ -24,8 +24,8 @@
 
         <div class="colophon">
 
-          {% for category in site.categories %}
-            <p>{{ category[0] }}</p>
+          {% for tag in site.tags %}
+            <p class="colophon-links" onclick="showPosts(this)">{{ tag[0] }}</p>
           {% endfor %}
 
 
@@ -39,4 +39,15 @@
     </div>
 
   </body>
+
+  <script>
+    function showPosts(thisTag){
+      window.location.href="/";
+      thisTag.innerText;
+      for(child in $(".posts").children){
+        
+      }
+    }
+  </script>
+
 </html>

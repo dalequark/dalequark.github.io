@@ -4,7 +4,7 @@
  <title>Unquarked</title>
  <link href="http://unquarked.com/atom.xml" rel="self"/>
  <link href="http://unquarked.com/"/>
- <updated>2014-11-09T14:15:07-07:00</updated>
+ <updated>2014-11-13T12:04:12-05:00</updated>
  <id>http://unquarked.com</id>
  <author>
    <name></name>
@@ -13,28 +13,19 @@
 
  
  <entry>
-   <title>Princeton Makers Collective at the Activities Faire</title>
-   <link href="http://unquarked.com/2014/12/09/Activities-Faire/"/>
-   <updated>2014-12-09T00:00:00-07:00</updated>
-   <id>http://unquarked.com/2014/12/09/Activities-Faire</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
    <title>Sigmaxi</title>
-   <link href="http://unquarked.com/hello/2014/11/09/sigmaxi/"/>
-   <updated>2014-11-09T00:00:00-07:00</updated>
-   <id>http://unquarked.com/hello/2014/11/09/sigmaxi</id>
+   <link href="http://unquarked.com/2014/11/09/sigmaxi/"/>
+   <updated>2014-11-09T00:00:00-05:00</updated>
+   <id>http://unquarked.com/2014/11/09/sigmaxi</id>
    <content type="html">&lt;p&gt;Presented BeagleCache at Sigma Xi Conference in Glendale – went well&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>EEG Training Day!</title>
-   <link href="http://unquarked.com/brains/2014/09/30/EEG-Training/"/>
-   <updated>2014-09-30T00:00:00-07:00</updated>
-   <id>http://unquarked.com/brains/2014/09/30/EEG-Training</id>
+   <link href="http://unquarked.com/2014/09/30/EEG-Training/"/>
+   <updated>2014-09-30T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/09/30/EEG-Training</id>
    <content type="html">&lt;p&gt;Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.
 He was a good sport about it, even after he couldn’t get the goop out of his hair.&lt;/p&gt;
 </content>
@@ -43,7 +34,7 @@ He was a good sport about it, even after he couldn’t get the goop out of his h
  <entry>
    <title>Maker Faire 2014, NYC</title>
    <link href="http://unquarked.com/2014/09/21/MakerFaire/"/>
-   <updated>2014-09-21T00:00:00-07:00</updated>
+   <updated>2014-09-21T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/09/21/MakerFaire</id>
    <content type="html">&lt;p&gt;Maker Faire has changed dramatically since my last visit in 2012, which was to be expected
 since the same goes for electronics prototyping as a whole.  Back in 2012, RadioShack might
@@ -54,14 +45,31 @@ On my first visit, the 3D printing tent consisted of n-thousand different types 
 but frankly, after you’ve seen one you’ve seen them all.  This year, it was easy to see that
 hobbyists had evolved from “Who can make the coolest 3D printer” to “what neat things can I do
 now that I have one?”  Some of my favorite applications of 3D printing are below:&lt;/p&gt;
-
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Princeton Makers Collective at the Activities Faire</title>
+   <link href="http://unquarked.com/2014/09/12/Activities-Faire/"/>
+   <updated>2014-09-12T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/09/12/Activities-Faire</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>BeagleCache A Network Accelerator for the Developing World</title>
+   <link href="http://unquarked.com/2014/08/20/BeagleCache/"/>
+   <updated>2014-08-20T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/08/20/BeagleCache</id>
+   <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Making an Infrasonic Pixel Necklace</title>
    <link href="http://unquarked.com/2014/07/28/pixel-necklace/"/>
-   <updated>2014-07-28T00:00:00-07:00</updated>
+   <updated>2014-07-28T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/07/28/pixel-necklace</id>
    <content type="html">
 </content>
@@ -70,7 +78,7 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
  <entry>
    <title>Headphone wires are the perfect necklace chains</title>
    <link href="http://unquarked.com/2014/07/15/headphone-wires/"/>
-   <updated>2014-07-15T00:00:00-07:00</updated>
+   <updated>2014-07-15T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/07/15/headphone-wires</id>
    <content type="html">&lt;p&gt;Disclaimer: No they aren’t.  But for what I wanted to do, they were the only (attractive) game in town.&lt;/p&gt;
 </content>
@@ -79,22 +87,22 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
  <entry>
    <title>BeagleBone Black Internet over USB in OSX Mavericks</title>
    <link href="http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering/"/>
-   <updated>2014-07-01T00:00:00-07:00</updated>
+   <updated>2014-07-01T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/07/01/Mavericks-BBB-USB-Tethering</id>
    <content type="html">&lt;p&gt;For quite some time, I was able to easily access the Internet from my BeagleBone
 Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook
-via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup 
+via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup
 completely broke.  After scouring the Internet and finding nothing to my remedy,
-however, I did a little digging with tcpdump and found that a combination of 
-port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to 
-enable port forwarding, disable Internet Sharing, and change the settings in the 
+however, I did a little digging with tcpdump and found that a combination of
+port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to
+enable port forwarding, disable Internet Sharing, and change the settings in the
 OSX routing tool pfctl to enable a NAT).  Here’s how
 you can get your BeagleBone Black talking to the web over the provided USB mini cable:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you. 
-The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got) 
+    &lt;p&gt;Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you.
+The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got)
 by default sets up a DHCP server, assigns itself the IP of 192.168.7.2, and hosts a static
 “Getting Started” page at this address.  If this page doesn’t load, try reinstalling the operating
 system &lt;a href=&quot;http://beagleboard.org/getting-started#update&quot;&gt;here&lt;/a&gt;.  In any case, by default you should
@@ -125,19 +133,19 @@ forwarded to the external network.  &lt;/p&gt;
 For example, I’m connected to wifi on en0 because the ifconfig entry shows my IP address under “inet”:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;en0: flags=8963&amp;lt;UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST&amp;gt; mtu 1500
-	ether 14:10:9f:e8:e1:62 
-	inet6 fe80::1610:9fff:fee8:e162%en0 prefixlen 64 scopeid 0x4 
+	ether 14:10:9f:e8:e1:62
+	inet6 fe80::1610:9fff:fee8:e162%en0 prefixlen 64 scopeid 0x4
 	inet 10.9.125.20 netmask 0xfffe0000 broadcast 10.9.255.255
 	nd6 options=1&amp;lt;PERFORMNUD&amp;gt;
 	media: autoselect
 	status: active
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this 
+&lt;p&gt;The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this
 inet address too):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;en8: flags=863&amp;lt;UP,BROADCAST,SMART,RUNNING,SIMPLEX&amp;gt; mtu 1486
-	ether 7c:66:9d:6e:ff:58 
+	ether 7c:66:9d:6e:ff:58
 	inet 192.168.7.1 netmask 0xfffffffc broadcast 192.168.7.3
 	media: autoselect
 	status: active
@@ -145,9 +153,9 @@ inet address too):&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;The problem I had was that my MacBook was not propertly translating the IP address of the BBB’s packets.  In order
-for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs 
+for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs
 to change the IP address on the BBB’s outgoing packets from 192.168.7.2 to it’s own IP address (in my case, 10.9.125.20).
-This is because 192.168.7.2 is a a &lt;em&gt;private&lt;/em&gt; IP address that only the local USB network understands.  We need to enable 
+This is because 192.168.7.2 is a a &lt;em&gt;private&lt;/em&gt; IP address that only the local USB network understands.  We need to enable
 a network address translator on the Mac (a NAT) in order to make the BBB’s packets routable on the larger WiFi network.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -171,7 +179,7 @@ nat-anchor &quot;com.apple/*&quot;
 
 &lt;p&gt;Now run:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;sudo pfctl -f /etc/pf.conf 
+&lt;pre&gt;&lt;code&gt;sudo pfctl -f /etc/pf.conf
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;If everything worked, the BBB should be connected.  From your SSH session with the BBB, test out the connection:&lt;/p&gt;
@@ -195,7 +203,7 @@ OSX, run:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;tcpdump -vv -i en8
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and try the ping again from the BBB.  Make sure there are incomping packets from 
+&lt;p&gt;and try the ping again from the BBB.  Make sure there are incomping packets from
 192.168.7.2:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;192.168.7.2.http &amp;gt; 192.168.7.1.50223: Flags [.], cksum 0xbd2f (correct), seq 10, ack 19, win 243, options [nop,nop,TS val 1824893 ecr 455837959], length 0
@@ -218,15 +226,59 @@ You should see:&lt;/p&gt;
 &lt;p&gt;If you see requests only from 192.168.7.2, your NAT is to blame.  Try restarting your computer and reloading pfctl.&lt;/p&gt;
 
 &lt;p&gt;Hope that helps!&lt;/p&gt;
-
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Poor Man's EEG Headpiece</title>
+   <link href="http://unquarked.com/2014/06/21/eeg-headband/"/>
+   <updated>2014-06-21T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/06/21/eeg-headband</id>
+   <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>A Single Channel EEG On the Cheap</title>
    <link href="http://unquarked.com/2014/06/20/EEG-Cheap/"/>
-   <updated>2014-06-20T00:00:00-07:00</updated>
+   <updated>2014-06-20T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/06/20/EEG-Cheap</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Brass 3D-Printed Atom Necklace</title>
+   <link href="http://unquarked.com/2014/06/01/atom-necklace/"/>
+   <updated>2014-06-01T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/06/01/atom-necklace</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SRON A Software-Defined Overlay Network</title>
+   <link href="http://unquarked.com/2014/05/20/SRON/"/>
+   <updated>2014-05-20T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/05/20/SRON</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Keep on top of tasks with the Workinator!</title>
+   <link href="http://unquarked.com/2014/03/14/Workinator/"/>
+   <updated>2014-03-14T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2014/03/14/Workinator</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>A Toast to Point-Cloud-Capturing Robots</title>
+   <link href="http://unquarked.com/2013/08/20/Capturing-Pointcloud/"/>
+   <updated>2013-08-20T00:00:00-04:00</updated>
+   <id>http://unquarked.com/2013/08/20/Capturing-Pointcloud</id>
    <content type="html">
 </content>
  </entry>

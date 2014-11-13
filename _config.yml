@@ -7,5 +7,5 @@ author:
   email:      ''
 markdown:     kramdown 
 permalink:    pretty
-pygments:     true
+highligher:     true
 paginate:     5

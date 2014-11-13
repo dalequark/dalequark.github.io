@@ -28,7 +28,7 @@
       <div class="masthead-inner">
 
 
-        <h1>Unquarked</h1>
+        <h1><a href="/">Unquarked</a></h1>
 
           <div class="masthead-nav">
 
@@ -44,9 +44,19 @@
         <div class="colophon">
 
           
-            <p>brains</p>
+            <p class="colophon-links" onclick="showPosts(this)">Electronics</p>
           
-            <p>hello</p>
+            <p class="colophon-links" onclick="showPosts(this)">Networking</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Linux</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">3D printing</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Brains</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">BeagleBoneBlack</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Princeton Makers Collective</p>
           
 
 
@@ -61,18 +71,18 @@
   <span class="post-date">01 Jul 2014</span>
   <p>For quite some time, I was able to easily access the Internet from my BeagleBone
 Black by enabling “Internet Sharing” in OSX Lion and attaching my BBB and MacBook
-via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup 
+via an ethernet cable.  After upgrading to Mavericks 10.9.3, though, this setup
 completely broke.  After scouring the Internet and finding nothing to my remedy,
-however, I did a little digging with tcpdump and found that a combination of 
-port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to 
-enable port forwarding, disable Internet Sharing, and change the settings in the 
+however, I did a little digging with tcpdump and found that a combination of
+port forwarding and nat settings on my MacBook needed to be changed (tldr; I needed to
+enable port forwarding, disable Internet Sharing, and change the settings in the
 OSX routing tool pfctl to enable a NAT).  Here’s how
 you can get your BeagleBone Black talking to the web over the provided USB mini cable:</p>
 
 <ol>
   <li>
-    <p>Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you. 
-The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got) 
+    <p>Plug in the BBB and navigate to http://192.168.7.2 in Chrome/Firefox/what have you.
+The Linux Angstrom or Debian distribution (depending on which version of the BBB you’ve got)
 by default sets up a DHCP server, assigns itself the IP of 192.168.7.2, and hosts a static
 “Getting Started” page at this address.  If this page doesn’t load, try reinstalling the operating
 system <a href="http://beagleboard.org/getting-started#update">here</a>.  In any case, by default you should
@@ -103,19 +113,19 @@ forwarded to the external network.  </p>
 For example, I’m connected to wifi on en0 because the ifconfig entry shows my IP address under “inet”:</p>
 
 <pre><code>en0: flags=8963&lt;UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST&gt; mtu 1500
-	ether 14:10:9f:e8:e1:62 
-	inet6 fe80::1610:9fff:fee8:e162%en0 prefixlen 64 scopeid 0x4 
+	ether 14:10:9f:e8:e1:62
+	inet6 fe80::1610:9fff:fee8:e162%en0 prefixlen 64 scopeid 0x4
 	inet 10.9.125.20 netmask 0xfffe0000 broadcast 10.9.255.255
 	nd6 options=1&lt;PERFORMNUD&gt;
 	media: autoselect
 	status: active
 </code></pre>
 
-<p>The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this 
+<p>The BBB is connecetd on en8, because it’s IP address is 192.168.7.1 (and yours should be an interface with this
 inet address too):</p>
 
 <pre><code>en8: flags=863&lt;UP,BROADCAST,SMART,RUNNING,SIMPLEX&gt; mtu 1486
-	ether 7c:66:9d:6e:ff:58 
+	ether 7c:66:9d:6e:ff:58
 	inet 192.168.7.1 netmask 0xfffffffc broadcast 192.168.7.3
 	media: autoselect
 	status: active
@@ -123,9 +133,9 @@ inet address too):</p>
 
 <ol>
   <li>The problem I had was that my MacBook was not propertly translating the IP address of the BBB’s packets.  In order
-for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs 
+for the BBB to connect to the outside world, when it sends data to the Internet, the MacBook needs
 to change the IP address on the BBB’s outgoing packets from 192.168.7.2 to it’s own IP address (in my case, 10.9.125.20).
-This is because 192.168.7.2 is a a <em>private</em> IP address that only the local USB network understands.  We need to enable 
+This is because 192.168.7.2 is a a <em>private</em> IP address that only the local USB network understands.  We need to enable
 a network address translator on the Mac (a NAT) in order to make the BBB’s packets routable on the larger WiFi network.</li>
 </ol>
 
@@ -149,7 +159,7 @@ nat-anchor "com.apple/*"
 
 <p>Now run:</p>
 
-<pre><code>sudo pfctl -f /etc/pf.conf 
+<pre><code>sudo pfctl -f /etc/pf.conf
 </code></pre>
 
 <p>If everything worked, the BBB should be connected.  From your SSH session with the BBB, test out the connection:</p>
@@ -173,7 +183,7 @@ OSX, run:</p>
 <pre><code>tcpdump -vv -i en8
 </code></pre>
 
-<p>and try the ping again from the BBB.  Make sure there are incomping packets from 
+<p>and try the ping again from the BBB.  Make sure there are incomping packets from
 192.168.7.2:</p>
 
 <pre><code>192.168.7.2.http &gt; 192.168.7.1.50223: Flags [.], cksum 0xbd2f (correct), seq 10, ack 19, win 243, options [nop,nop,TS val 1824893 ecr 455837959], length 0
@@ -197,8 +207,8 @@ You should see:</p>
 
 <p>Hope that helps!</p>
 
-
 </div>
+
 
 <div class="related">
   <h2>Related Posts</h2>
@@ -206,16 +216,7 @@ You should see:</p>
     
       <li>
         <h3>
-          <a href="/2014/12/09/Activities-Faire/">
-            Princeton Makers Collective at the Activities Faire
-            <small>09 Dec 2014</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/hello/2014/11/09/sigmaxi/">
+          <a href="/2014/11/09/sigmaxi/">
             Sigmaxi
             <small>09 Nov 2014</small>
           </a>
@@ -224,9 +225,18 @@ You should see:</p>
     
       <li>
         <h3>
-          <a href="/brains/2014/09/30/EEG-Training/">
+          <a href="/2014/09/30/EEG-Training/">
             EEG Training Day!
             <small>30 Sep 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/09/21/MakerFaire/">
+            Maker Faire 2014, NYC
+            <small>21 Sep 2014</small>
           </a>
         </h3>
       </li>
@@ -237,4 +247,15 @@ You should see:</p>
     </div>
 
   </body>
+
+  <script>
+    function showPosts(thisTag){
+      window.location.href="/";
+      thisTag.innerText;
+      for(child in $(".posts").children){
+        
+      }
+    }
+  </script>
+
 </html>

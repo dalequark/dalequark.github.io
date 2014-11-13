@@ -28,7 +28,7 @@
       <div class="masthead-inner">
 
 
-        <h1>Unquarked</h1>
+        <h1><a href="/">Unquarked</a></h1>
 
           <div class="masthead-nav">
 
@@ -44,9 +44,19 @@
         <div class="colophon">
 
           
-            <p>brains</p>
+            <p class="colophon-links" onclick="showPosts(this)">Electronics</p>
           
-            <p>hello</p>
+            <p class="colophon-links" onclick="showPosts(this)">Networking</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Linux</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">3D printing</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Brains</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">BeagleBoneBlack</p>
+          
+            <p class="colophon-links" onclick="showPosts(this)">Princeton Makers Collective</p>
           
 
 
@@ -57,23 +67,7 @@
 
     <div class="content container">
       <div class="posts">
-  
-    
-    <div class="post">
-      <h1>
-        <a href="/2014/12/09/Activities-Faire/">
-          Princeton Makers Collective at the Activities Faire
-        </a>
-      </h1>
 
-      <span class="post-date">09 Dec 2014</span>
-
-      
-
-      
-
-    </div>
-    
   
     
     <div class="tweet"><p>Presented BeagleCache at Sigma Xi Conference in Glendale – went well</p>
@@ -83,7 +77,7 @@
     
     <div class="post">
       <h1>
-        <a href="/brains/2014/09/30/EEG-Training/">
+        <a href="/2014/09/30/EEG-Training/">
           EEG Training Day!
         </a>
       </h1>
@@ -94,8 +88,7 @@
 He was a good sport about it, even after he couldn’t get the goop out of his hair.</p>
 
 
-      
-
+      <div class="tags">Brains</div>
     </div>
     
   
@@ -114,30 +107,44 @@ since the same goes for electronics prototyping as a whole.  Back in 2012, Radio
 sell the Arduino Uno and maybe a single shield.  </p>
 
 
-      
-
+      <div class="tags">Princeton Makers Collective</div>
     </div>
     
   
     
     <div class="post">
       <h1>
-        <a href="/2014/07/28/pixel-necklace/">
-          Making an Infrasonic Pixel Necklace
+        <a href="/2014/09/12/Activities-Faire/">
+          Princeton Makers Collective at the Activities Faire
         </a>
       </h1>
 
-      <span class="post-date">28 Jul 2014</span>
+      <span class="post-date">12 Sep 2014</span>
 
       
 
-      
-
+      <div class="tags">Princeton Makers Collective</div>
     </div>
     
   
-</div>
+    
+    <div class="post">
+      <h1>
+        <a href="/2014/08/20/BeagleCache/">
+          BeagleCache A Network Accelerator for the Developing World
+        </a>
+      </h1>
 
+      <span class="post-date">20 Aug 2014</span>
+
+      
+
+      <div class="tags">Linux, Electronics, and Networking</div>
+    </div>
+    
+  
+
+</div>
 <!-- Pagination links -->
 <div class="pagination">
   
@@ -147,7 +154,19 @@ sell the Arduino Uno and maybe a single shield.  </p>
     <span class="previous">Newer</span>
   
 </div>
+
     </div>
 
   </body>
+
+  <script>
+    function showPosts(thisTag){
+      window.location.href="/";
+      thisTag.innerText;
+      for(child in $(".posts").children){
+        
+      }
+    }
+  </script>
+
 </html>
