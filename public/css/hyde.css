@@ -308,6 +308,11 @@ a:focus {
     right: 0;
     left: 0;
   }
+  .masthead-inner h1 a{
+    font-family: "Audiowide";
+     font-style: normal;
+     font-weight: 400;
+  }
   .colophon {
     margin-top: 40px;
   }

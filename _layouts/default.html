@@ -42,10 +42,12 @@
 
   <script>
     function showPosts(thisTag){
-      window.location.href="/";
+      //window.location.href="/";
       thisTag.innerText;
-      for(child in $(".posts").children){
-        
+      var posts = document.getElementsByClassName("post");
+      console.log(posts);
+      for(post in posts){
+        console.log("last child is " + post[0].childNodes)
       }
     }
   </script>

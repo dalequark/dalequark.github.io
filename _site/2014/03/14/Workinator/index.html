@@ -5,6 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link href="//fonts.googleapis.com/css?family=Audiowide:400" rel="stylesheet" type="text/css">
 
   <title>
     Keep on top of tasks with the Workinator! &middot; 
@@ -114,10 +115,12 @@
 
   <script>
     function showPosts(thisTag){
-      window.location.href="/";
+      //window.location.href="/";
       thisTag.innerText;
-      for(child in $(".posts").children){
-        
+      var posts = document.getElementsByClassName("post");
+      console.log(posts);
+      for(post in posts){
+        console.log("last child is " + post[0].childNodes)
       }
     }
   </script>
