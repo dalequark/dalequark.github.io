@@ -4,7 +4,7 @@
  <title>Unquarked</title>
  <link href="http://unquarked.com/atom.xml" rel="self"/>
  <link href="http://unquarked.com/"/>
- <updated>2014-11-17T14:11:48-05:00</updated>
+ <updated>2014-11-26T15:26:16-05:00</updated>
  <id>http://unquarked.com</id>
  <author>
    <name></name>
@@ -26,7 +26,9 @@
    <link href="http://unquarked.com/2014/09/30/EEG-Training/"/>
    <updated>2014-09-30T00:00:00-04:00</updated>
    <id>http://unquarked.com/2014/09/30/EEG-Training</id>
-   <content type="html">&lt;p&gt;Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://unquarked.com/images/joe_eeg_closeup.jpg&quot; alt=&quot;Joe wired up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.
 He was a good sport about it, even after he couldn’t get the goop out of his hair.&lt;/p&gt;
 </content>
  </entry>
