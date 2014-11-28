@@ -292,21 +292,11 @@ a:focus {
     padding: 40px;
   }
 }
+
 @media (min-width: 990px) {
-  /* Fix the masthead to the side for impact and awesomeness */
   .masthead {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 25%;
-    margin-bottom: 0;
   }
   .masthead-inner {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
   }
   .masthead-inner h1 a{
     font-family: "Audiowide";
