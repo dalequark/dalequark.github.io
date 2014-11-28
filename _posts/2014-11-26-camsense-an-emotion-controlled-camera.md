@@ -3,7 +3,8 @@ layout: article
 title: "CamSense: An Emotion-Controlled Camera"
 modified:
 categories:
-excerpt:
+excerpt: "A camera that takes a picture when its wearer is excited or stressed,
+based on GSR and heartbeat"
 tags: []
 image:
   feature: camsense_feature.jpg

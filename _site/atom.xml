@@ -4,10 +4,10 @@
     <title>Unquarked</title>
     <generator uri="https://github.com/jekyll/jekyll">Jekyll v2.4.0</generator>
 		<icon>/apple-touch-icon-precomposed.png</icon>
-    <subtitle>Nerdspace of Dale Markowitz</subtitle>
+    <subtitle>A place for the ramblings of Dale</subtitle>
     <link href="/atom.xml" rel="self"/>
     <link href="/" rel="alternate" type="text/html"/>
-    <updated>2014-11-27T20:46:08-05:00</updated>
+    <updated>2014-11-28T02:02:33-05:00</updated>
     <id>/</id>
     <author>
 			<name></name>
@@ -15,6 +15,23 @@
 			
 		</author>
 
+    
+    <entry>
+        <title>Neuromancer</title>
+        <link href="/neuromancer/"/>
+        <updated>2014-11-28T00:52:18-05:00</updated>
+        <id>/neuromancer</id>
+        <author>
+					<name></name>
+					<uri>/</uri>
+					
+				</author>
+        <content type="html">
+        	&lt;img src=&quot;/images/joe_eeg_feature.jpg&quot;&gt;&lt;br/&gt;
+        	
+
+        </content>
+    </entry>
     
     <entry>
         <title>CamSense: An Emotion-Controlled Camera</title>
@@ -39,10 +56,10 @@ out the
     </entry>
     
     <entry>
-        <title>EEG Training Day!</title>
-        <link href="/EEG-Training/"/>
+        <title>Adventures in DIY EEG Land</title>
+        <link href="/DIY-EEG/"/>
         <updated>2014-09-30T00:00:00-04:00</updated>
-        <id>/EEG-Training</id>
+        <id>/DIY-EEG</id>
         <author>
 					<name></name>
 					<uri>/</uri>
@@ -54,31 +71,6 @@ out the
 
 &lt;p&gt;Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.
 He was a good sport about it, even after he couldn’t get the goop out of his hair.&lt;/p&gt;
-
-        </content>
-    </entry>
-    
-    <entry>
-        <title>Maker Faire 2014, NYC</title>
-        <link href="/MakerFaire/"/>
-        <updated>2014-09-21T00:00:00-04:00</updated>
-        <id>/MakerFaire</id>
-        <author>
-					<name></name>
-					<uri>/</uri>
-					
-				</author>
-        <content type="html">
-        	
-        	&lt;p&gt;Maker Faire has changed dramatically since my last visit in 2012, which was to be expected
-since the same goes for electronics prototyping as a whole.  Back in 2012, RadioShack might
-sell the Arduino Uno and maybe a single shield.  &lt;/p&gt;
-
-&lt;p&gt;The most interesting change in Maker Faire this year, in my mind, are the 3D printing displays.
-On my first visit, the 3D printing tent consisted of n-thousand different types of 3D printers,
-but frankly, after you’ve seen one you’ve seen them all.  This year, it was easy to see that
-hobbyists had evolved from “Who can make the coolest 3D printer” to “what neat things can I do
-now that I have one?”  Some of my favorite applications of 3D printing are below:&lt;/p&gt;
 
         </content>
     </entry>
@@ -101,7 +93,7 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
     </entry>
     
     <entry>
-        <title>BeagleCache A Network Accelerator for the Developing World</title>
+        <title>BeagleCache: A Network Accelerator for the Developing World</title>
         <link href="/BeagleCache/"/>
         <updated>2014-08-20T00:00:00-04:00</updated>
         <id>/BeagleCache</id>
@@ -130,41 +122,9 @@ now that I have one?”  Some of my favorite applications of 3D printing are bel
         <content type="html">
         	
         	&lt;p&gt;One of my favorite projects was this pixel necklace.
+Adafruit link
+http://www.adafruit.com/blog/2014/11/19/glowy-necklace-made-from-headphone-cable-wearablewednesday/
 http://www.instructables.com/id/Electronics-Necklace-from-Headphone-Cable/?embed=flash&lt;/p&gt;
-
-        </content>
-    </entry>
-    
-    <entry>
-        <title>A Single Channel EEG On the Cheap</title>
-        <link href="/EEG-Cheap/"/>
-        <updated>2014-06-20T00:00:00-04:00</updated>
-        <id>/EEG-Cheap</id>
-        <author>
-					<name></name>
-					<uri>/</uri>
-					
-				</author>
-        <content type="html">
-        	
-        	
-
-        </content>
-    </entry>
-    
-    <entry>
-        <title>Brass 3D-Printed Atom Necklace</title>
-        <link href="/atom-necklace/"/>
-        <updated>2014-06-01T00:00:00-04:00</updated>
-        <id>/atom-necklace</id>
-        <author>
-					<name></name>
-					<uri>/</uri>
-					
-				</author>
-        <content type="html">
-        	
-        	
 
         </content>
     </entry>
@@ -210,7 +170,7 @@ to dynamically alter routing rules based on those latencies.  &lt;/p&gt;
     </entry>
     
     <entry>
-        <title>A Toast to Point-Cloud-Capturing Robots</title>
+        <title>A Robot for Scanning Rooms in 3D</title>
         <link href="/Capturing-Pointcloud/"/>
         <updated>2013-08-20T00:00:00-04:00</updated>
         <id>/Capturing-Pointcloud</id>

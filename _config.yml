@@ -1,11 +1,11 @@
 # Site wide configuration
 
 title: Unquarked
-description: Nerdspace of Dale Markowitz
+description: A place for the ramblings of Dale
 logo: # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
+teaser: circuit.gif # 400x250 px default teaser image used in image archive grid
 locale:
-url: 
+url:
 
 # Jekyll configuration
 
@@ -21,11 +21,12 @@ gems:
 
 # Site owner
 owner: Dale
-name: Dale Markowitz
+name: Dale M
 twitter: dalequark
 bio: Student at Princeton University '15, Computer Science
-avatar: bio-photo.jpg # 160x160 px image for author byline
-disqus-shortname:
+avatar: bio-photo.png # 160x160 px image for author byline
+disqus-shortname: dalequark
+
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
