@@ -2,6 +2,9 @@
 layout: post
 title: Maker Faire 2014, NYC
 tags: [Princeton Makers Collective]
+image:
+  feature:
+  teaser:
 ---
 
 Maker Faire has changed dramatically since my last visit in 2012, which was to be expected

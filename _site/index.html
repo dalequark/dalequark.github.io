@@ -1,171 +1,263 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<html>
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <link href="//fonts.googleapis.com/css?family=Audiowide:400" rel="stylesheet" type="text/css">
-  <script src="public/jquery.min.js"></script>
-
-  <title>
+    <meta charset="utf-8">
+    <title>Latest Posts • Unquarked</title>
     
-    Nerdspace by Dale
-  </title>
+    
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Latest Posts">
+	
+	
+	
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Latest Posts">
+	
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="Unquarked">
+    
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/hyde.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
+    <link rel="canonical" href="/">
 
-  <!-- Icons -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Unquarked Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-</head>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
 
+    <style>
+    .sliding-menu-content {
+      top: 0;
+      right: 0;
+      text-align: center;
+      visibility: hidden;
+      height: 100%;
+      width: 100%;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    </style>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
 
   <body>
-
-    <header class="masthead">
-      <div class="masthead-inner">
-
-
-        <h1><a href="/">Unquarked</a></h1>
-
-          <div class="masthead-nav">
-
-              <a href="/">Home</a>
-
-
-              <a href="/about">About</a>
-
-
-              <a href="https://github.com/dalequark">GitHub</a>
-          </div>
-
-        <div class="colophon">
-
-          
-            <p class="colophon-links" onclick="showPosts(this)">Electronics</p>
-          
-            <p class="colophon-links" onclick="showPosts(this)">Networking</p>
-          
-            <p class="colophon-links" onclick="showPosts(this)">Linux</p>
-          
-            <p class="colophon-links" onclick="showPosts(this)">3D printing</p>
-          
-            <p class="colophon-links" onclick="showPosts(this)">Brains</p>
-          
-            <p class="colophon-links" onclick="showPosts(this)">BeagleBoneBlack</p>
-          
-            <p class="colophon-links" onclick="showPosts(this)">Princeton Makers Collective</p>
-          
-
-
-
-        </div>
-      </div>
-    </header>
-
-    <div class="content container">
-      <div class="posts">
-
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="" class="site-title">Unquarked</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Unquarked</a></li>
+	
+    
+        
+    
+    <li><a href="/" >Home</a></li>
   
     
-    <div class="tweet"><p>Presented BeagleCache at Sigma Xi Conference in Glendale – went well</p>
-</div>
+        
     
+    <li><a href="/about" >About</a></li>
   
     
-    <div class="post">
-      <h1>
-        <a href="/2014/09/30/EEG-Training/">
-          EEG Training Day!
-        </a>
-      </h1>
-
-      <span class="post-date">30 Sep 2014</span>
-
-      <p><img src="http://unquarked.com/images/joe_eeg_closeup.jpg" alt="Joe wired up" /></p>
-
-
-    </div>
+        
     
+    <li><a href="/cv" >CV</a></li>
   
-    
-    <div class="post">
-      <h1>
-        <a href="/2014/09/21/MakerFaire/">
-          Maker Faire 2014, NYC
-        </a>
-      </h1>
-
-      <span class="post-date">21 Sep 2014</span>
-
-      <p>Maker Faire has changed dramatically since my last visit in 2012, which was to be expected
-since the same goes for electronics prototyping as a whole.  Back in 2012, RadioShack might
-sell the Arduino Uno and maybe a single shield.  </p>
-
-
-    </div>
-    
-  
-    
-    <div class="post">
-      <h1>
-        <a href="/2014/09/12/Activities-Faire/">
-          Princeton Makers Collective at the Activities Faire
-        </a>
-      </h1>
-
-      <span class="post-date">12 Sep 2014</span>
-
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" class="js-menu sliding-menu-content">
+	<ul class="menu-item">
+		<li>
       
-
-    </div>
-    
-  
-    
-    <div class="post">
-      <h1>
-        <a href="/2014/08/20/BeagleCache/">
-          BeagleCache A Network Accelerator for the Developing World
-        </a>
-      </h1>
-
-      <span class="post-date">20 Aug 2014</span>
-
+        
       
+			
+			<a href="/" class="title">Home</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/about" class="title">About</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/cv" class="title">CV</a>
+			
+		</li>
+	</ul>
+</nav>
+<button type="button" class="js-menu-trigger sliding-menu-button menulines-button x2" role="button" aria-label="Toggle Navigation">
+	<span class="menulines"></span>
+</button>
 
+<div class="js-menu-screen menu-screen"></div>
+
+    <div id="page-wrapper">
+
+      <div id="main" role="main">			
+	<div class="wrap">
+		
+		<div class="page-title">
+			<h1>Latest Posts</h1>
+			
+		</div>
+		<div class="archive-wrap">
+			<div class="page-content">
+				<div class="tiles">
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/camsense-an-emotion-controlled-camera/" title="CamSense: An Emotion-Controlled Camera" class="post-teaser"><img src="/images/camsense_teaser.jpg" alt="teaser" itemprop="image" />
+    </a>
+  <p class="entry-date date published"><time datetime="2014-11-26" itemprop="datePublished">November 26, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/camsense-an-emotion-controlled-camera/">CamSense: An Emotion-Controlled Camera</a></h2>
+  <p class="post-excerpt" itemprop="description"></p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/EEG-Training/" title="EEG Training Day!" class="post-teaser"><img src="/images/joe_eeg_teaser.jpg" alt="teaser" itemprop="image" />
+    </a>
+  <p class="entry-date date published"><time datetime="2014-09-30" itemprop="datePublished">September 30, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/EEG-Training/">EEG Training Day!</a></h2>
+  <p class="post-excerpt" itemprop="description">
+
+</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/MakerFaire/" title="Maker Faire 2014, NYC" class="post-teaser"><img src="/images/" alt="teaser" itemprop="image" /></a>
+  <p class="entry-date date published"><time datetime="2014-09-21" itemprop="datePublished">September 21, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/MakerFaire/">Maker Faire 2014, NYC</a></h2>
+  <p class="post-excerpt" itemprop="description">Maker Faire has changed dramatically since my last visit in 2012, which was to be expected
+since the same goes for electronics prototyping as a whole.  Back ...</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/Activities-Faire/" title="Princeton Makers Collective at the Activities Faire" class="post-teaser"><img src="/images/" alt="teaser" itemprop="image" /></a>
+  <p class="entry-date date published"><time datetime="2014-09-12" itemprop="datePublished">September 12, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/Activities-Faire/">Princeton Makers Collective at the Activities Faire</a></h2>
+  <p class="post-excerpt" itemprop="description">
+</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/BeagleCache/" title="BeagleCache A Network Accelerator for the Developing World" class="post-teaser"><img src="/images/" alt="teaser" itemprop="image" /></a>
+  <p class="entry-date date published"><time datetime="2014-08-20" itemprop="datePublished">August 20, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/BeagleCache/">BeagleCache A Network Accelerator for the Developing World</a></h2>
+  <p class="post-excerpt" itemprop="description">
+</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/pixel-necklace/" title="Infrasonic Pixel Necklace" class="post-teaser"><img src="/images/glowynecklace.gif" alt="teaser" itemprop="image" />
+    </a>
+  <p class="entry-date date published"><time datetime="2014-07-28" itemprop="datePublished">July 28, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/pixel-necklace/">Infrasonic Pixel Necklace</a></h2>
+  <p class="post-excerpt" itemprop="description">One of my favorite projects was this pixel necklace.
+http://www.instructables.com/id/Electronics-Necklace-from-Headphone-Cable/?embed=flash
+
+</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/EEG-Cheap/" title="A Single Channel EEG On the Cheap" class="post-teaser"><img src="/images/" alt="teaser" itemprop="image" /></a>
+  <p class="entry-date date published"><time datetime="2014-06-20" itemprop="datePublished">June 20, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/EEG-Cheap/">A Single Channel EEG On the Cheap</a></h2>
+  <p class="post-excerpt" itemprop="description">
+</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/atom-necklace/" title="Brass 3D-Printed Atom Necklace" class="post-teaser"><img src="/images/" alt="teaser" itemprop="image" /></a>
+  <p class="entry-date date published"><time datetime="2014-06-01" itemprop="datePublished">June 01, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/atom-necklace/">Brass 3D-Printed Atom Necklace</a></h2>
+  <p class="post-excerpt" itemprop="description">
+</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/SRON/" title="SRON: A Software-Defined Overlay Network" class="post-teaser"><img src="/images/sron.png" alt="teaser" itemprop="image" />
+    </a>
+  <p class="entry-date date published"><time datetime="2014-05-20" itemprop="datePublished">May 20, 2014</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/SRON/">SRON: A Software-Defined Overlay Network</a></h2>
+  <p class="post-excerpt" itemprop="description">During the Spring semester of my junior year, I decided to do a research project
+with Professor Jen Rexford, who is not only
+a networking God but also probab...</p>
+</article><!-- /.tile -->
+
+
+	<article class="tile" itemscope="" itemtype="http://schema.org/Article">
+  <a href="/Capturing-Pointcloud/" title="A Toast to Point-Cloud-Capturing Robots" class="post-teaser"><img src="/images/point_cloud_teaser.jpg" alt="teaser" itemprop="image" />
+    </a>
+  <p class="entry-date date published"><time datetime="2013-08-20" itemprop="datePublished">August 20, 2013</time></p>
+  <h2 class="post-title" itemprop="name"><a href="/Capturing-Pointcloud/">A Toast to Point-Cloud-Capturing Robots</a></h2>
+  <p class="post-excerpt" itemprop="description">
+</p>
+</article><!-- /.tile -->
+
+
+</div>
+<!-- /.tiles -->
+
+			</div><!-- /.page-content -->
+		</div class="archive-wrap"><!-- /.archive-wrap -->
+	</div><!-- /.wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+        
+      
+			<li><a href="" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2014 <a href="">Unquarked</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
     </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
     
-  
-
-</div>
-<!-- Pagination links -->
-<div class="pagination">
-  
-    <a href="/page2" class="older">Older</a>
-  
-  
-    <span class="previous">Newer</span>
-  
-</div>
-
-    </div>
 
   </body>
-
-  <script>
-    function showPosts(thisTag){
-      //window.location.href="/";
-      thisTag.innerText;
-      var posts = document.getElementsByClassName("post");
-      console.log(posts);
-      for(post in posts){
-        console.log("last child is " + post[0].childNodes)
-      }
-    }
-  </script>
 
 </html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SRON: A Software-Defined Overlay Network • Unquarked</title>
+    <meta name="description" content="During the Spring semester of my junior year, I decided to do a research project
+with Professor Jen Rexford, who is not only
+a networking God but also probably the best advisor one can over hope to work with.
+We worked together on a Software-Defined Networking project called
+SRON: A Software-Defined Overlay Network. I had never done research in
+networking before, as usually I work on projects that involve working with
+physical hardware devices.  Nonetheless, I learned a bunch from all of the obstacles
+I faced in building SRON, from basic network programming to how to deal with
+distributed computing problems like timing events across a distributed system.
+And, not to brag, but I thought of some “neat” solutions to these problems
+that you can read about in my paper.
+
+">
+    <meta name="keywords" content="Networking, Linux">
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="SRON: A Software-Defined Overlay Network">
+	<meta name="twitter:description" content="During the Spring semester of my junior year, I decided to do a research project
+with Professor Jen Rexford, who is not only
+a networking God but also probably the best advisor one can over hope to work with.
+We worked together on a Software-Defined Networking project called
+SRON: A Software-Defined Overlay Network. I had never done research in
+networking before, as usually I work on projects that involve working with
+physical hardware devices.  Nonetheless, I learned a bunch from all of the obstacles
+I faced in building SRON, from basic network programming to how to deal with
+distributed computing problems like timing events across a distributed system.
+And, not to brag, but I thought of some “neat” solutions to these problems
+that you can read about in my paper.
+
+">
+	
+	
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="/images/sron.png">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="SRON: A Software-Defined Overlay Network">
+	<meta property="og:description" content="During the Spring semester of my junior year, I decided to do a research project
+with Professor Jen Rexford, who is not only
+a networking God but also probably the best advisor one can over hope to work with.
+We worked together on a Software-Defined Networking project called
+SRON: A Software-Defined Overlay Network. I had never done research in
+networking before, as usually I work on projects that involve working with
+physical hardware devices.  Nonetheless, I learned a bunch from all of the obstacles
+I faced in building SRON, from basic network programming to how to deal with
+distributed computing problems like timing events across a distributed system.
+And, not to brag, but I thought of some “neat” solutions to these problems
+that you can read about in my paper.
+
+">
+	<meta property="og:url" content="/SRON/">
+	<meta property="og:site_name" content="Unquarked">
+    
+
+    <link rel="canonical" href="/SRON/">
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Unquarked Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <style>
+    .sliding-menu-content {
+      top: 0;
+      right: 0;
+      text-align: center;
+      visibility: hidden;
+      height: 100%;
+      width: 100%;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    </style>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="" class="site-title">Unquarked</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Unquarked</a></li>
+	
+    
+        
+    
+    <li><a href="/" >Home</a></li>
+  
+    
+        
+    
+    <li><a href="/about" >About</a></li>
+  
+    
+        
+    
+    <li><a href="/cv" >CV</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" class="js-menu sliding-menu-content">
+	<ul class="menu-item">
+		<li>
+      
+        
+      
+			
+			<a href="/" class="title">Home</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/about" class="title">About</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/cv" class="title">CV</a>
+			
+		</li>
+	</ul>
+</nav>
+<button type="button" class="js-menu-trigger sliding-menu-button menulines-button x2" role="button" aria-label="Toggle Navigation">
+	<span class="menulines"></span>
+</button>
+
+<div class="js-menu-screen menu-screen"></div>
+
+    <div id="page-wrapper">
+
+      <div id="main" role="main">			
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		<div class="page-feature">
+			<div class="page-image">
+				<img src="/images/sron.png" class="page-feature-image" alt="SRON: A Software-Defined Overlay Network" itemprop="image">
+				
+			</div><!-- /.page-image -->
+		</div><!-- /.page-feature -->
+		
+		
+		<div class="page-title">
+			<h1>SRON: A Software-Defined Overlay Network</h1>
+		</div>
+		<div class="inner-wrap">
+			<nav class="toc"></nav><!-- /.toc -->
+			<div id="content" class="page-content" itemprop="articleBody">
+				<p>During the Spring semester of my junior year, I decided to do a research project
+with Professor <a href="http://www.cs.princeton.edu/~jrex/">Jen Rexford</a>, who is not only
+a networking God but also probably the best advisor one can over hope to work with.
+We worked together on a Software-Defined Networking project called
+<em>SRON: A Software-Defined Overlay Network</em>. I had never done research in
+networking before, as usually I work on projects that involve working with
+physical hardware devices.  Nonetheless, I learned a bunch from all of the obstacles
+I faced in building SRON, from basic network programming to how to deal with
+distributed computing problems like timing events across a distributed system.
+And, not to brag, but I thought of some “neat” solutions to these problems
+that you can read about in my <a href="/files/SRON_whitepaper.pdf">paper</a>.</p>
+
+<p>So what is SRON? In short:</p>
+
+<p>SRON is software written in the network
+programming language <a href="http://www.frenetic-lang.org/pyretic/">Pyretic</a> that allows internet service
+providers to create an <a href="http://en.wikipedia.org/wiki/Overlay_network">overlay network</a> over their physical
+network to help them better respond to routing outages, congestion, and more. In
+particular, internet service providers (ISPs) can often monitor the routers within their
+networks well, but once network traffic leaves their domain and is handed off
+to a second ISP, the original ISP cannot easily monitor routing performance.
+SRON allows a single ISP to monitor the latencies of various paths throughout
+the Internet, even those paths that might cross through many ISP domains, and
+to dynamically alter routing rules based on those latencies.  </p>
+
+				<hr />
+				<footer class="page-footer">
+					
+
+
+<div class="author-image">
+	<img src="/images/" alt="">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name" >Written by <span itemprop="author"></span></h3>
+	<p class="author-bio"></p>
+</div><!-- ./author-content -->
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=SRON:%20A%20Software-Defined%20Overlay%20Network&amp;url=/SRON/&amp;via=" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=/SRON/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=/SRON/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+					<div class="page-meta">
+	<p>Updated <time datetime="2014-05-20T00:00:00Z" itemprop="datePublished">May 20, 2014</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- ./wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+        
+      
+			<li><a href="" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2014 <a href="">Unquarked</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    
+
+  </body>
+
+</html>

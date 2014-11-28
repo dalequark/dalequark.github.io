@@ -1,7 +1,10 @@
 ---
 layout: post
 title: EEG Training Day!
-tags: [Brains]
+tags: [Neuroscience]
+image:
+  feature: joe_eeg_feature.jpg
+  teaser:  joe_eeg_teaser.jpg
 ---
 
 ![Joe wired up]({{ site.url }}/images/joe_eeg_closeup.jpg)
