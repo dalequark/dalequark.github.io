@@ -5,7 +5,7 @@ description: A place for the ramblings of Dale
 logo: # 120x120 px default image used for Twitter summary card
 teaser: circuit.gif # 400x250 px default teaser image used in image archive grid
 locale:
-url: www.unquarked.com
+url: 
 
 # Jekyll configuration
 
