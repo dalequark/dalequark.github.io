@@ -1,15 +1,16 @@
 ---
-layout: default
+layout: article
 title: About
 date: {{ date }}
 permalink: /about/
 modified:
 excerpt:
 image:
-  feature: dalebrain.png
   teaser:  dalebrain.png
-  thumb: dalebrain.png
 ---
+
+![brain]({{site.url}}/images/dalebrain.png)
+
   My name is Dale, and I study Computer Science at Princeton University
 (class of 2015).  I'm interested in all sorts of stuff, from tinkering
 around with hardware to building

@@ -7,7 +7,7 @@
     <subtitle>A place for the ramblings of Dale</subtitle>
     <link href="/atom.xml" rel="self"/>
     <link href="/" rel="alternate" type="text/html"/>
-    <updated>2014-11-28T02:02:33-05:00</updated>
+    <updated>2014-12-02T20:58:08-05:00</updated>
     <id>/</id>
     <author>
 			<name></name>
@@ -15,6 +15,48 @@
 			
 		</author>
 
+    
+    <entry>
+        <title>A Simple Wristwatch</title>
+        <link href="/a-simple-wristwatch/"/>
+        <updated>2014-11-28T01:57:01-05:00</updated>
+        <id>/a-simple-wristwatch</id>
+        <author>
+					<name></name>
+					<uri>/</uri>
+					
+				</author>
+        <content type="html">
+        	
+        	&lt;p&gt;In an attempt to master Eagle and surface-mount soldering, I decided to
+design a simple LED wristwatch with as small a footprint as I could manage.
+As you can see in this &lt;a href=&quot;/files/wristwatch.sch&quot;&gt;schematic&lt;/a&gt; (board files
+  &lt;a href=&quot;/files/wristwatch1.brd&quot;&gt;here&lt;/a&gt;), the
+watch runs on an ATMega328P.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/wristwatchschematic.png&quot; alt=&quot;schematic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I chose this chip because it’s the same chip
+in an Arduino Uno, and there are many tutorials online for how to upload
+code to it via an &lt;a href=&quot;http://arduino.cc/en/Tutorial/ArduinoISP&quot;&gt;Arduino ISP&lt;/a&gt;. I
+also decided to use a real time clock with a built-in crystal to keep time. This
+RTC is pretty expensive ($8 on mouser?), but keeps time extremely accurately. On
+V2, I might use a cheaper RTC or forgo the RTC and add a 16Mhz crystal instead.
+At the present, the Arduino is designed to use its own internal 8Hz oscillator as a clock.&lt;/p&gt;
+
+&lt;p&gt;I meticulously reviewed the schematics and printed 3 boards for around $10 from
+OSHPark.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/wristwatchboards.jpg&quot; alt=&quot;oshpark&quot; /&gt;
+Nonetheless, I found after soldering 90% of the components that &lt;strong&gt;the schematic is broken&lt;/strong&gt;!
+There’s a whole row of LED’s that are connected to nothing,
+and there’s no easy way to get at the clock pin. I tried bootloading the thing
+with an Arduino, but haven’t had success yet.  News to come with V2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/bootloading.jpg&quot; alt=&quot;bootloading&quot; /&gt;&lt;/p&gt;
+
+        </content>
+    </entry>
     
     <entry>
         <title>Neuromancer</title>
@@ -67,27 +109,35 @@ out the
 				</author>
         <content type="html">
         	&lt;img src=&quot;/images/joe_eeg_feature.jpg&quot;&gt;&lt;br/&gt;
-        	&lt;p&gt;&lt;img src=&quot;/images/joe_eeg_closeup.jpg&quot; alt=&quot;Joe wired up&quot; /&gt;&lt;/p&gt;
+        	&lt;p&gt;I always thought that mind reading was pretty amazing, and volunteered for
+all sorts of campus psych studies involving EEG and fMRI. That’s how I got
+this lovely picture of my brain, as well as the same picture in 3D.  At the beginning of the summer, though, I learned that was (no pun) mind-blowing.  It’s possible to mind-read for less than $20.  So began my journey into DIY EEG tech.  &lt;/p&gt;
 
-&lt;p&gt;Today Joe agreed to let me slather conductive gel in his hair and wire him up to a 32-channel BioSemi EEG electrode array.
-He was a good sport about it, even after he couldn’t get the goop out of his hair.&lt;/p&gt;
+&lt;p&gt;Our thoughts stir a whirlwind of electrical activity along our scalps.  Engagement, meditation, sleep, and even the subjects of our thoughts create faint but real electrical patterns that we can measure non-intrusively by placing electrodes on our scalps.  Electroencephalographs or EEGs do just this, creating a timeseries of voltage levels distributed in space along the head.  Sometimes, our thoughts manifest themselves as distinct frequencies in these voltages. For example (DATA HERE).  Other times, the mappings between EEG and our thoughts are too complicated for us to discern simply by frequency analysis, and we must apply machine learning techniques to map EEG data to states of mind.  The biggest problem neuroscientists face in interpreting EEG data is not hwo to interpret it, though, but how to tease brain data out from noisy signals.  In the past, it would have been impossible for a hobbyist to make a quality EEG simply because a DIY EEG would be cursed with a terrible signal-to-noise ratio, from noise in 60Hz frequencies of power lines (in the US), from eyeblink movements and facial expressions.  Today, this is still the primary problem a hobbyist faces, but hardware and software have come together to improve SNR’s.  Since June, I’ve investigated in depth EEG options availible to hobbyists, and this is my DIY EEG review.&lt;/p&gt;
 
-        </content>
-    </entry>
-    
-    <entry>
-        <title>Princeton Makers Collective at the Activities Faire</title>
-        <link href="/Activities-Faire/"/>
-        <updated>2014-09-12T00:00:00-04:00</updated>
-        <id>/Activities-Faire</id>
-        <author>
-					<name></name>
-					<uri>/</uri>
-					
-				</author>
-        <content type="html">
-        	
-        	
+&lt;ul&gt;
+  &lt;li&gt;DIY EEG’s
+    &lt;ul&gt;
+      &lt;li&gt;Single Channel&lt;/li&gt;
+      &lt;li&gt;EEGMouse&lt;/li&gt;
+      &lt;li&gt;OpenBCI&lt;/li&gt;
+      &lt;li&gt;Electrodes
+        &lt;ul&gt;
+          &lt;li&gt;Canada electrodes + 10/20 Paste vs Flour&lt;/li&gt;
+          &lt;li&gt;Pennies&lt;/li&gt;
+          &lt;li&gt;Sticky&lt;/li&gt;
+          &lt;li&gt;Holster?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Out of the Box EEG’s
+    &lt;ul&gt;
+      &lt;li&gt;Mindwave, etc&lt;/li&gt;
+      &lt;li&gt;Emotiv&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
         </content>
     </entry>
