@@ -7,7 +7,7 @@
     <subtitle>A place for the ramblings of Dale</subtitle>
     <link href="/atom.xml" rel="self"/>
     <link href="/" rel="alternate" type="text/html"/>
-    <updated>2014-12-02T20:58:08-05:00</updated>
+    <updated>2014-12-06T23:57:14-05:00</updated>
     <id>/</id>
     <author>
 			<name></name>
@@ -70,7 +70,7 @@ with an Arduino, but haven’t had success yet.  News to come with V2.&lt;/p&gt;
 				</author>
         <content type="html">
         	&lt;img src=&quot;/images/joe_eeg_feature.jpg&quot;&gt;&lt;br/&gt;
-        	
+        	&lt;p&gt;I’m currently working on a Brain Computer Interface that, using EEG data, decides whether a participant is viewing a face or a place, and in turn gives them neurofeedback to help them better focus on one or the other.  In the process, I’ve built a framework for running experiments in Java + Python + the browser.  You can view the code &lt;a href=&quot;https://github.com/dalequark/emotivExperiment&quot;&gt;here&lt;/a&gt;.  More details to come soon. Stay tuned!&lt;/p&gt;
 
         </content>
     </entry>
@@ -108,36 +108,31 @@ out the
 					
 				</author>
         <content type="html">
-        	&lt;img src=&quot;/images/joe_eeg_feature.jpg&quot;&gt;&lt;br/&gt;
+        	&lt;img src=&quot;/images/dalebrainlarge.png&quot;&gt;&lt;br/&gt;
         	&lt;p&gt;I always thought that mind reading was pretty amazing, and volunteered for
 all sorts of campus psych studies involving EEG and fMRI. That’s how I got
 this lovely picture of my brain, as well as the same picture in 3D.  At the beginning of the summer, though, I learned that was (no pun) mind-blowing.  It’s possible to mind-read for less than $20.  So began my journey into DIY EEG tech.  &lt;/p&gt;
 
-&lt;p&gt;Our thoughts stir a whirlwind of electrical activity along our scalps.  Engagement, meditation, sleep, and even the subjects of our thoughts create faint but real electrical patterns that we can measure non-intrusively by placing electrodes on our scalps.  Electroencephalographs or EEGs do just this, creating a timeseries of voltage levels distributed in space along the head.  Sometimes, our thoughts manifest themselves as distinct frequencies in these voltages. For example (DATA HERE).  Other times, the mappings between EEG and our thoughts are too complicated for us to discern simply by frequency analysis, and we must apply machine learning techniques to map EEG data to states of mind.  The biggest problem neuroscientists face in interpreting EEG data is not hwo to interpret it, though, but how to tease brain data out from noisy signals.  In the past, it would have been impossible for a hobbyist to make a quality EEG simply because a DIY EEG would be cursed with a terrible signal-to-noise ratio, from noise in 60Hz frequencies of power lines (in the US), from eyeblink movements and facial expressions.  Today, this is still the primary problem a hobbyist faces, but hardware and software have come together to improve SNR’s.  Since June, I’ve investigated in depth EEG options availible to hobbyists, and this is my DIY EEG review.&lt;/p&gt;
+&lt;p&gt;Our thoughts stir a whirlwind of electrical activity along our scalps.  Engagement, meditation, sleep, and even the subjects of our thoughts create faint but real electrical patterns that we can measure non-intrusively by placing electrodes on our scalps.  Electroencephalographs or EEGs do just this, creating a timeseries of voltage levels distributed in space along the head.  Sometimes, our thoughts manifest themselves as distinct frequencies in these voltages. For example, sleep, meditation, and concentration often have distinct frequency signals.  Other times, the mappings between EEG and our thoughts are too complicated for us to discern simply by frequency analysis, and we must apply machine learning techniques to map EEG data to states of mind.  The biggest problem neuroscientists face in interpreting EEG data is not hwo to interpret it, though, but how to tease brain data out from noisy signals.  In the past, it would have been impossible for a hobbyist to make a quality EEG simply because a DIY EEG would be cursed with a terrible signal-to-noise ratio, from noise in 60Hz frequencies of power lines (in the US), from eyeblink movements and facial expressions.  Today, this is still the primary problem a hobbyist faces, but hardware and software have come together to improve SNR’s.  Since June, I’ve investigated in depth EEG options availible to hobbyists, and this is my DIY EEG review.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;DIY EEG’s
-    &lt;ul&gt;
-      &lt;li&gt;Single Channel&lt;/li&gt;
-      &lt;li&gt;EEGMouse&lt;/li&gt;
-      &lt;li&gt;OpenBCI&lt;/li&gt;
-      &lt;li&gt;Electrodes
-        &lt;ul&gt;
-          &lt;li&gt;Canada electrodes + 10/20 Paste vs Flour&lt;/li&gt;
-          &lt;li&gt;Pennies&lt;/li&gt;
-          &lt;li&gt;Sticky&lt;/li&gt;
-          &lt;li&gt;Holster?&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Out of the Box EEG’s
-    &lt;ul&gt;
-      &lt;li&gt;Mindwave, etc&lt;/li&gt;
-      &lt;li&gt;Emotiv&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;diy-eegs&quot;&gt;DIY EEG’s&lt;/h1&gt;
+&lt;p&gt;## A Cheap, Single Channel EEG&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eeg_circuit.jpeg&quot; alt=&quot;Single Channel EEG&quot; /&gt;
+  My EEG adventures began with an EEG for measuring only a single channel of eeg data.  It’s pretty easy to measure only a single channel accurately. You can do it for under $30 with an Arduino and some amplifiers.  The breadboarded circuit above is a picture of my single channel EEG, which I made under the guidance of very helpful &lt;a href=&quot;https://sites.google.com/site/chipstein/home-page/eeg-with-an-arduino&quot;&gt;Chipstein&lt;/a&gt;’s instructions.  Many current, cheap commercial devices have only a single channel of data (&lt;a href=&quot;http://www.thinkmelon.com/&quot;&gt;Melon&lt;/a&gt;, &lt;a href=&quot;http://store.neurosky.com/products/mindwave-1&quot;&gt;Mindwave&lt;/a&gt;, and Mindflex to name a few). I didn’t analyze this data in depth, but apparently it can provide a general sense of focus/engagement if interpreted correctly. I’m not too skeptical of this, since even &lt;a href=&quot;/camsense-an-emotion-controlled-camera/&quot;&gt;skin conductivity&lt;/a&gt; can tell us a lot about our emotional levels.  &lt;/p&gt;
+
+&lt;h2 id=&quot;eegmouse-and-openbci-high-quality-8-channel-eeg&quot;&gt;EEGMouse and OpenBCI: High Quality, 8 Channel EEG&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://openelectronicslab.github.io/eeg-mouse/&quot;&gt;EEGMouse&lt;/a&gt; is a super cool, open source project developed by some very helpful hackers in the Netherlands. Their board files, which are availible online, essentially break out the “TI ADS1299 8-Channel 24-Bit analog front-end” so that it can interface with an Arduino. TI has just created an awesome line of chips that are designed to process EEG, EKG, and EMG signals, which include amplifiers and filters for many channels in a single chip. These chips, like the TI ADS1299, already appear in several consumer products, but EEGMouse and &lt;a href=&quot;openbci.com&quot;&gt;OpenBCI&lt;/a&gt; are of the first open source projects I’ve seen to use them.  As a result, if used with high quality electrodes and conductive paste, these devices can produce very impressive signals for a hobbyist device.   These devices are very similar (OpenBCI also uses a chip from the TI ADS family), the main difference being that OpenBCI was a Kickstarted project that sells their prefabricated boards at ~$450, whilst EEGMouse is an open source project that provides board files, Arduino code, and instructions, but no physical product.  Thus to use EEGMouse, hackers have to have their own boards fabricated.  I was lucky enough to snag one of the EEGMouse developers’ unused V1 boards, but soldering on the tiny ADS1299 chip proved to be challenging:&lt;/p&gt;
+
+&lt;p&gt;The chip, by the way, is pretty pricy unless you’re a student who has access to TI’s free chip sample program. So, the EEGMouse is a cheaper EEG than those from OpenBCI, but it’s not for the faint of [soldering] heart.&lt;/p&gt;
+
+&lt;h1 id=&quot;consumer-eegs&quot;&gt;Consumer EEG’s&lt;/h1&gt;
+
+&lt;h2 id=&quot;emotiv-epoc&quot;&gt;Emotiv Epoc&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/dale_emotiv.jpg&quot; alt=&quot;Me with my Emotiv Epoc&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In my research, I use an &lt;a href=&quot;https://emotiv.com/epoc.php&quot;&gt;Emotiv Epoch&lt;/a&gt; which is pretty luxurious compared to any of the described solutions above. With 14 channels and electrodes that you can simply wet with contact solution (no gross, thick conductive gel in the hair), it’s pretty convenient, and I’ve seen good signals from it thus far. The drawback is that unless you buy the über-exensive “Research” edition, you won’t get access to raw signal data but only to an abstract Emotiv API that exposes things like “excitement” or “attention”. But if you’re lucky like me to have a university paying for your research license, it’s very nice.&lt;/p&gt;
 
         </content>
     </entry>
@@ -154,7 +149,7 @@ this lovely picture of my brain, as well as the same picture in 3D.  At the begi
 				</author>
         <content type="html">
         	
-        	
+        	&lt;p&gt;Internet access in developing world countries is both extremely slow and expensive, due largely to a lack of physical infrastructure.  As a result, web caching—wherein a central web cache stores data fetched by users in the network and provides subsequent requesters with a cached copy of that data—can be effective in decreasing the lag users experience in these regions.  Paired with another strategy called “bandwidth shifting,” in which an accelerator node located in a high-bandwidth region compresses data for and manages the freshness for accelerator nodes in low-bandwidth regions, caching can be more effective still.  I was curious to know if these sophisticated acceleration techniques could run on a cheap, single-board ARM computer, which could ultimately provide a simple plug-and-play platform for developing world network accelerators.  In my research, I attempted to create such a platform on a BeagleBone Black (BBB), a $45 Linux computer no larger than a credit card.  After testing the BBB’s bandwidth in serving disk requests, I determined this cheap computer would have the chutzpa to serve as a web cache, and began developing caching/bandwidth-shifting software for it.  Using Node Javascript and C, I created a portable software stack that could run on the BBB, resulting in BeagleCache: A Low-Cost Caching Proxy for the Developing World.  &lt;/p&gt;
 
         </content>
     </entry>
@@ -171,10 +166,170 @@ this lovely picture of my brain, as well as the same picture in 3D.  At the begi
 				</author>
         <content type="html">
         	
-        	&lt;p&gt;One of my favorite projects was this pixel necklace.
-Adafruit link
-http://www.adafruit.com/blog/2014/11/19/glowy-necklace-made-from-headphone-cable-wearablewednesday/
-http://www.instructables.com/id/Electronics-Necklace-from-Headphone-Cable/?embed=flash&lt;/p&gt;
+        	&lt;p&gt;This project was featured on the &lt;a href=&quot;http://www.adafruit.com/blog/2014/11/19/glowy-necklace-made-from-headphone-cable-wearablewednesday/&quot;&gt;Adafruit Wearables Blog&lt;/a&gt;, and was a Featured Article on &lt;a href=&quot;ttp://www.instructables.com/id/Electronics-Necklace-from-Headphone-Cable/?embed=flash&quot;&gt;Instructables&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This pixel necklace was definitely my favorite project, mostly because it has quite a few design tricks up its sleeve.&lt;/p&gt;
+
+&lt;p&gt;First, as far as connected necklaces go, it has a pretty small pendant with a powerful processor.  The trick is that the microcontroller controlling the tri-color LED pendant is actually hid behind my neck, and controls the LED via the super-thin wires in a headphone cable.  The clasp for the necklace is a headphone cable jack; I close the necklace by snapping the headphone cable jack into its socket, which also serves as a switch for the necklace.  You can read about how I worked with headphone cables in the &lt;a href=&quot;ttp://www.instructables.com/id/Electronics-Necklace-from-Headphone-Cable/?embed=flash&quot;&gt;Instructable&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;My end goal in making this necklace was to have it alert me when my cellphone rang.  I didn’t want to deal with convincing my phone to send out a bluetooth signal when I received a call, though, so I decided to have the LED light up when my phone emitted a high-frequency, ultrasonic pulse.  This was a pretty cheap solution, since it meant I only had to have a microphone connected to my microcontroller.  I also gave my pixel necklace a mode in which it lit up in response to distinct freqeuncy progressions (i.e. like those in Seven Nation Army).  Below is some code to do this that I haven’t looked at for months, that was informed by &lt;a href=&quot;http://blog.theultimatelabs.com/2013/05/wirelessly-communicating-with-arduino.html&quot;&gt;this code&lt;/a&gt;, so I’m sorry if it’s nonsensical.&lt;br /&gt;
+ //TODO: Make sense of this code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; #include &amp;lt;avr/pgmspace.h&amp;gt;
+ #include &amp;lt;Adafruit_NeoPixel.h&amp;gt;
+
+ boolean ready = 0;
+ #define PIN 6
+ int BUILTINPIN = 13;
+ #define ADC_CENTER 127
+ #define WINDOW_SIZE 128
+ #define BIT_PERIOD 8
+ #define BIT_PERIOD_2 16
+ #define BIT_PERIOD_5_2 20
+ #define BIT_PERIOD_3_2 12
+ #define BIT_PERIOD_1_2 4
+ #define MSG_LENGTH 3
+ #define NUM_BYTES 5
+ #define NUM_MSGS 5
+ #define THRESHOLD 25000
+
+ unsigned long mag;
+ int counter = 0;
+ const unsigned int ON_THRESHOLD = 500;
+ const unsigned int OFF_THRESHOLD = ON_THRESHOLD/2;
+
+
+ const float SAMPLE_RATE = 76923.0769;//38461.5385 //8928.57143
+ const float STAMP_MS = (float)WINDOW_SIZE/(SAMPLE_RATE/1000);
+
+ byte bytei = 0;
+ byte biti = 0;
+ byte lastSmpl = 0;
+ byte bankIn = 0;
+ byte bankProc = 0;
+
+ unsigned short samplei=0;
+ unsigned long stamp=0;
+ unsigned long lastStamp=0;
+
+
+ int Q1,Q2;
+ //Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
+
+ void setup() {
+
+   // strip.begin();
+   //strip.show(); // Initialize all pixels to &#39;off&#39;
+
+   Serial.begin(9600);
+   initADC();
+
+
+
+ }
+
+ int tcount = 0;
+ void loop()
+ {
+   tcount++;
+   Serial.print(&quot;Count is &quot;);
+   Serial.println(counter);
+   /*
+   if(counter &amp;gt; 10)
+   {
+     rainbowCycle(5);
+     // After, turn of neopixel
+     strip.setPixelColor(0,0,0,0);
+     strip.show();
+   }
+   */
+
+ }
+
+ // Slightly different, this makes the rainbow equally distributed throughout
+ /*
+ void rainbowCycle(uint8_t wait) {
+   uint16_t i, j;
+
+   for(j=0; j&amp;lt;256*5; j++) { // 5 cycles of all colors on wheel
+     for(i=0; i&amp;lt; strip.numPixels(); i++) {
+       strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) &amp;amp; 255));
+     }
+     strip.show();
+     delay(wait);
+   }
+ }
+ */
+ // Input a value 0 to 255 to get a color value.
+ // The colours are a transition r - g - b - back to r.
+ /*
+ uint32_t Wheel(byte WheelPos) {
+   if(WheelPos &amp;lt; 85) {
+     return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
+     } else if(WheelPos &amp;lt; 170) {
+       WheelPos -= 85;
+       return strip.Color(255 - WheelPos * 3, 0, WheelPos * 3);
+       } else {
+         WheelPos -= 170;
+         return strip.Color(0, WheelPos * 3, 255 - WheelPos * 3);
+       }
+     }
+
+     */
+     void initADC() {
+       cli();//diable interrupts
+
+       //set up continuous sampling of analog pin 0
+
+       //clear ADCSRA and ADCSRB registers
+       ADCSRA = 0;
+       ADCSRB = 0;
+
+       ADMUX |= (1 &amp;lt;&amp;lt; REFS0); //set reference voltage
+       ADMUX |= (1 &amp;lt;&amp;lt; ADLAR); //left align the ADC value- so we can read highest 8 bits from ADCH register only
+
+       ADCSRA |= (1 &amp;lt;&amp;lt; ADPS2) ;//| (1 &amp;lt;&amp;lt; ADPS0); //set ADC clock with 32 prescaler- 16mHz/32=500kHz
+       ADCSRA |= (1 &amp;lt;&amp;lt; ADATE); //enabble auto trigger
+       enableADCInterrupt();//ADCSRA |= (1 &amp;lt;&amp;lt; ADIE); //enable interrupts when measurement complete
+       ADCSRA |= (1 &amp;lt;&amp;lt; ADEN); //enable ADC
+       ADCSRA |= (1 &amp;lt;&amp;lt; ADSC); //start ADC measurements
+
+       sei();//enable interrupts
+     }
+
+     void enableADCInterrupt() {
+       ADCSRA |= (1 &amp;lt;&amp;lt; ADIE); //enable interrupts when measurement complete
+     }
+     void disableADCInterrupt() {
+       ADCSRA &amp;amp;= ~(1 &amp;lt;&amp;lt; ADIE); //enable interrupts when measurement complete
+     }
+
+
+     ISR(ADC_vect) {
+       int Q0 = -Q2 + ((int)ADCH-ADC_CENTER);
+       Q2 = Q1;
+       Q1 = Q0;
+
+       samplei++;
+       if(samplei == WINDOW_SIZE) {
+         samplei = 0;
+         unsigned long mag = (unsigned long)((long)Q1)*Q1+(unsigned long)((long)Q2)*Q2;
+
+         Q1=Q2=0;
+
+         if(mag &amp;gt; ON_THRESHOLD) {
+           counter = 1;
+         }
+         else if (mag &amp;lt; OFF_THRESHOLD) {
+           counter = 0;
+         }
+         else
+         {
+           counter = 3;
+         }
+       }
+     }
+&lt;/code&gt;&lt;/pre&gt;
 
         </content>
     </entry>
@@ -231,7 +386,8 @@ to dynamically alter routing rules based on those latencies.  &lt;/p&gt;
 				</author>
         <content type="html">
         	&lt;img src=&quot;/images/point_cloud_feature.gif&quot;&gt;&lt;br/&gt;
-        	
+        	&lt;p&gt;At &lt;a href=&quot;http://www.floored.com/&quot;&gt;Floored Inc&lt;/a&gt;, I built a device for taking 3D scans of interior spaces.  Using a Hokuyo laser rangefinder, dSLR camera, and computer mounted on a motor-controlled tripod, I was able to create some
+nice point clouds (as above), linked with image data.&lt;/p&gt;
 
         </content>
     </entry>

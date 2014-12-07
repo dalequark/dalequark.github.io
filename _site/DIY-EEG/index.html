@@ -14,7 +14,7 @@
 	
 	
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="/images/joe_eeg_feature.jpg">
+	<meta name="twitter:image" content="/images/dalebrainlarge.png">
 	
 	<!-- Open Graph -->
 	<meta property="og:locale" content="">
@@ -126,7 +126,7 @@
 		
 		<div class="page-feature">
 			<div class="page-image">
-				<img src="/images/joe_eeg_feature.jpg" class="page-feature-image" alt="Adventures in DIY EEG Land" itemprop="image">
+				<img src="/images/dalebrainlarge.png" class="page-feature-image" alt="Adventures in DIY EEG Land" itemprop="image">
 				
 			</div><!-- /.page-image -->
 		</div><!-- /.page-feature -->
@@ -142,31 +142,26 @@
 all sorts of campus psych studies involving EEG and fMRI. That’s how I got
 this lovely picture of my brain, as well as the same picture in 3D.  At the beginning of the summer, though, I learned that was (no pun) mind-blowing.  It’s possible to mind-read for less than $20.  So began my journey into DIY EEG tech.  </p>
 
-<p>Our thoughts stir a whirlwind of electrical activity along our scalps.  Engagement, meditation, sleep, and even the subjects of our thoughts create faint but real electrical patterns that we can measure non-intrusively by placing electrodes on our scalps.  Electroencephalographs or EEGs do just this, creating a timeseries of voltage levels distributed in space along the head.  Sometimes, our thoughts manifest themselves as distinct frequencies in these voltages. For example (DATA HERE).  Other times, the mappings between EEG and our thoughts are too complicated for us to discern simply by frequency analysis, and we must apply machine learning techniques to map EEG data to states of mind.  The biggest problem neuroscientists face in interpreting EEG data is not hwo to interpret it, though, but how to tease brain data out from noisy signals.  In the past, it would have been impossible for a hobbyist to make a quality EEG simply because a DIY EEG would be cursed with a terrible signal-to-noise ratio, from noise in 60Hz frequencies of power lines (in the US), from eyeblink movements and facial expressions.  Today, this is still the primary problem a hobbyist faces, but hardware and software have come together to improve SNR’s.  Since June, I’ve investigated in depth EEG options availible to hobbyists, and this is my DIY EEG review.</p>
+<p>Our thoughts stir a whirlwind of electrical activity along our scalps.  Engagement, meditation, sleep, and even the subjects of our thoughts create faint but real electrical patterns that we can measure non-intrusively by placing electrodes on our scalps.  Electroencephalographs or EEGs do just this, creating a timeseries of voltage levels distributed in space along the head.  Sometimes, our thoughts manifest themselves as distinct frequencies in these voltages. For example, sleep, meditation, and concentration often have distinct frequency signals.  Other times, the mappings between EEG and our thoughts are too complicated for us to discern simply by frequency analysis, and we must apply machine learning techniques to map EEG data to states of mind.  The biggest problem neuroscientists face in interpreting EEG data is not hwo to interpret it, though, but how to tease brain data out from noisy signals.  In the past, it would have been impossible for a hobbyist to make a quality EEG simply because a DIY EEG would be cursed with a terrible signal-to-noise ratio, from noise in 60Hz frequencies of power lines (in the US), from eyeblink movements and facial expressions.  Today, this is still the primary problem a hobbyist faces, but hardware and software have come together to improve SNR’s.  Since June, I’ve investigated in depth EEG options availible to hobbyists, and this is my DIY EEG review.</p>
 
-<ul>
-  <li>DIY EEG’s
-    <ul>
-      <li>Single Channel</li>
-      <li>EEGMouse</li>
-      <li>OpenBCI</li>
-      <li>Electrodes
-        <ul>
-          <li>Canada electrodes + 10/20 Paste vs Flour</li>
-          <li>Pennies</li>
-          <li>Sticky</li>
-          <li>Holster?</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Out of the Box EEG’s
-    <ul>
-      <li>Mindwave, etc</li>
-      <li>Emotiv</li>
-    </ul>
-  </li>
-</ul>
+<h1 id="diy-eegs">DIY EEG’s</h1>
+<p>## A Cheap, Single Channel EEG</p>
+
+<p><img src="/images/eeg_circuit.jpeg" alt="Single Channel EEG" />
+  My EEG adventures began with an EEG for measuring only a single channel of eeg data.  It’s pretty easy to measure only a single channel accurately. You can do it for under $30 with an Arduino and some amplifiers.  The breadboarded circuit above is a picture of my single channel EEG, which I made under the guidance of very helpful <a href="https://sites.google.com/site/chipstein/home-page/eeg-with-an-arduino">Chipstein</a>’s instructions.  Many current, cheap commercial devices have only a single channel of data (<a href="http://www.thinkmelon.com/">Melon</a>, <a href="http://store.neurosky.com/products/mindwave-1">Mindwave</a>, and Mindflex to name a few). I didn’t analyze this data in depth, but apparently it can provide a general sense of focus/engagement if interpreted correctly. I’m not too skeptical of this, since even <a href="/camsense-an-emotion-controlled-camera/">skin conductivity</a> can tell us a lot about our emotional levels.  </p>
+
+<h2 id="eegmouse-and-openbci-high-quality-8-channel-eeg">EEGMouse and OpenBCI: High Quality, 8 Channel EEG</h2>
+
+<p><a href="http://openelectronicslab.github.io/eeg-mouse/">EEGMouse</a> is a super cool, open source project developed by some very helpful hackers in the Netherlands. Their board files, which are availible online, essentially break out the “TI ADS1299 8-Channel 24-Bit analog front-end” so that it can interface with an Arduino. TI has just created an awesome line of chips that are designed to process EEG, EKG, and EMG signals, which include amplifiers and filters for many channels in a single chip. These chips, like the TI ADS1299, already appear in several consumer products, but EEGMouse and <a href="openbci.com">OpenBCI</a> are of the first open source projects I’ve seen to use them.  As a result, if used with high quality electrodes and conductive paste, these devices can produce very impressive signals for a hobbyist device.   These devices are very similar (OpenBCI also uses a chip from the TI ADS family), the main difference being that OpenBCI was a Kickstarted project that sells their prefabricated boards at ~$450, whilst EEGMouse is an open source project that provides board files, Arduino code, and instructions, but no physical product.  Thus to use EEGMouse, hackers have to have their own boards fabricated.  I was lucky enough to snag one of the EEGMouse developers’ unused V1 boards, but soldering on the tiny ADS1299 chip proved to be challenging:</p>
+
+<p>The chip, by the way, is pretty pricy unless you’re a student who has access to TI’s free chip sample program. So, the EEGMouse is a cheaper EEG than those from OpenBCI, but it’s not for the faint of [soldering] heart.</p>
+
+<h1 id="consumer-eegs">Consumer EEG’s</h1>
+
+<h2 id="emotiv-epoc">Emotiv Epoc</h2>
+<p><img src="/images/dale_emotiv.jpg" alt="Me with my Emotiv Epoc" /></p>
+
+<p>In my research, I use an <a href="https://emotiv.com/epoc.php">Emotiv Epoch</a> which is pretty luxurious compared to any of the described solutions above. With 14 channels and electrodes that you can simply wet with contact solution (no gross, thick conductive gel in the hair), it’s pretty convenient, and I’ve seen good signals from it thus far. The drawback is that unless you buy the über-exensive “Research” edition, you won’t get access to raw signal data but only to an abstract Emotiv API that exposes things like “excitement” or “attention”. But if you’re lucky like me to have a university paying for your research license, it’s very nice.</p>
 
 				<hr />
 				<footer class="page-footer">
