@@ -5,14 +5,14 @@ date: {{ date }}
 permalink: /about/
 modified:
 excerpt:
-image:
-  teaser:  dalebrain.png
 ---
 
-![brain]({{site.url}}/images/dalebrain.png)
+![brain]({{site.url}}/images/daleprof.jpg)
 
   My name is Dale, and I study Computer Science at Princeton University
-(class of 2015).  I'm interested in all sorts of stuff, from tinkering
+(class of 2015).  Above you can see a picture of me and my room-scanning
+robot [nelson]({{site.url}}/Capturing-Pointcloud/).
+I'm interested in all sorts of stuff, from tinkering
 around with hardware to building
 [brain-computer interfaces]({{site.url}}/neuromancer) to figuring out how
 to use machine learning techniques to better analyze the data I get from the

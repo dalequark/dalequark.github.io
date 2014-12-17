@@ -7,7 +7,7 @@
     <subtitle>A place for the ramblings of Dale</subtitle>
     <link href="/atom.xml" rel="self"/>
     <link href="/" rel="alternate" type="text/html"/>
-    <updated>2014-12-06T23:57:14-05:00</updated>
+    <updated>2014-12-16T23:55:23-05:00</updated>
     <id>/</id>
     <author>
 			<name></name>
@@ -124,6 +124,8 @@ this lovely picture of my brain, as well as the same picture in 3D.  At the begi
 &lt;h2 id=&quot;eegmouse-and-openbci-high-quality-8-channel-eeg&quot;&gt;EEGMouse and OpenBCI: High Quality, 8 Channel EEG&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://openelectronicslab.github.io/eeg-mouse/&quot;&gt;EEGMouse&lt;/a&gt; is a super cool, open source project developed by some very helpful hackers in the Netherlands. Their board files, which are availible online, essentially break out the “TI ADS1299 8-Channel 24-Bit analog front-end” so that it can interface with an Arduino. TI has just created an awesome line of chips that are designed to process EEG, EKG, and EMG signals, which include amplifiers and filters for many channels in a single chip. These chips, like the TI ADS1299, already appear in several consumer products, but EEGMouse and &lt;a href=&quot;openbci.com&quot;&gt;OpenBCI&lt;/a&gt; are of the first open source projects I’ve seen to use them.  As a result, if used with high quality electrodes and conductive paste, these devices can produce very impressive signals for a hobbyist device.   These devices are very similar (OpenBCI also uses a chip from the TI ADS family), the main difference being that OpenBCI was a Kickstarted project that sells their prefabricated boards at ~$450, whilst EEGMouse is an open source project that provides board files, Arduino code, and instructions, but no physical product.  Thus to use EEGMouse, hackers have to have their own boards fabricated.  I was lucky enough to snag one of the EEGMouse developers’ unused V1 boards, but soldering on the tiny ADS1299 chip proved to be challenging:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eegboard.jpg&quot; alt=&quot;eegmouseboard&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chip, by the way, is pretty pricy unless you’re a student who has access to TI’s free chip sample program. So, the EEGMouse is a cheaper EEG than those from OpenBCI, but it’s not for the faint of [soldering] heart.&lt;/p&gt;
 
@@ -386,8 +388,13 @@ to dynamically alter routing rules based on those latencies.  &lt;/p&gt;
 				</author>
         <content type="html">
         	&lt;img src=&quot;/images/point_cloud_feature.gif&quot;&gt;&lt;br/&gt;
-        	&lt;p&gt;At &lt;a href=&quot;http://www.floored.com/&quot;&gt;Floored Inc&lt;/a&gt;, I built a device for taking 3D scans of interior spaces.  Using a Hokuyo laser rangefinder, dSLR camera, and computer mounted on a motor-controlled tripod, I was able to create some
-nice point clouds (as above), linked with image data.&lt;/p&gt;
+        	&lt;p&gt;At &lt;a href=&quot;http://www.floored.com/&quot;&gt;Floored Inc&lt;/a&gt;, I built a device for taking 3D scans of interior spaces.  Using a Hokuyo laser rangefinder, a 2D color camera, and a computer mounted on a motor-controlled tripod, I was able to create some
+nice point clouds (as above), linked with image data.  “Nelson,” as we called
+v0 of this scanner, was built in Node.js (albeit with many C bindings).  Node’s asynchronous style was both
+a blessing and a curse for this project; on the one hand, it made it easy to parallelize tasks that could
+be performed independently of each other, but was a pain when work needed to be done sequentially.
+I would love to share my code, but unfortunately it belongs to Floored! You can see a picture
+of Nelson and me &lt;a href=&quot;/about&quot;&gt;here&lt;/a&gt;, though!&lt;/p&gt;
 
         </content>
     </entry>

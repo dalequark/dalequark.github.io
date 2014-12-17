@@ -138,8 +138,13 @@
 		<div class="inner-wrap">
 			<nav class="toc"></nav><!-- /.toc -->
 			<div id="content" class="page-content" itemprop="articleBody">
-				<p>At <a href="http://www.floored.com/">Floored Inc</a>, I built a device for taking 3D scans of interior spaces.  Using a Hokuyo laser rangefinder, dSLR camera, and computer mounted on a motor-controlled tripod, I was able to create some
-nice point clouds (as above), linked with image data.</p>
+				<p>At <a href="http://www.floored.com/">Floored Inc</a>, I built a device for taking 3D scans of interior spaces.  Using a Hokuyo laser rangefinder, a 2D color camera, and a computer mounted on a motor-controlled tripod, I was able to create some
+nice point clouds (as above), linked with image data.  “Nelson,” as we called
+v0 of this scanner, was built in Node.js (albeit with many C bindings).  Node’s asynchronous style was both
+a blessing and a curse for this project; on the one hand, it made it easy to parallelize tasks that could
+be performed independently of each other, but was a pain when work needed to be done sequentially.
+I would love to share my code, but unfortunately it belongs to Floored! You can see a picture
+of Nelson and me <a href="/about">here</a>, though!</p>
 
 				<hr />
 				<footer class="page-footer">
