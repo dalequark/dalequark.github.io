@@ -7,7 +7,7 @@
     <subtitle>A place for the ramblings of Dale</subtitle>
     <link href="/atom.xml" rel="self"/>
     <link href="/" rel="alternate" type="text/html"/>
-    <updated>2014-12-16T23:55:23-05:00</updated>
+    <updated>2014-12-22T11:30:55-05:00</updated>
     <id>/</id>
     <author>
 			<name></name>
@@ -70,7 +70,27 @@ with an Arduino, but haven’t had success yet.  News to come with V2.&lt;/p&gt;
 				</author>
         <content type="html">
         	&lt;img src=&quot;/images/joe_eeg_feature.jpg&quot;&gt;&lt;br/&gt;
-        	&lt;p&gt;I’m currently working on a Brain Computer Interface that, using EEG data, decides whether a participant is viewing a face or a place, and in turn gives them neurofeedback to help them better focus on one or the other.  In the process, I’ve built a framework for running experiments in Java + Python + the browser.  You can view the code &lt;a href=&quot;https://github.com/dalequark/emotivExperiment&quot;&gt;here&lt;/a&gt;.  More details to come soon. Stay tuned!&lt;/p&gt;
+        	&lt;p&gt;Our brains often misbehave; they make us bored, anxious, procrastinatory,
+they get distracted at all the wrong times. Many of us accept this behavior as
+an unchangeable part of life, and why not? Thought is a difficult process to
+debug, given what limited access we have to our true internal mental state. What
+we need to overcome our mental bad habits, then, is a sort of debugger; a device
+that tells us more than what we can intuit given our own stream of consciousness.&lt;/p&gt;
+
+&lt;p&gt;Neuromancer is such a device for helping us improve our concentration. Comprised
+of an EEG headset (either an &lt;a href=&quot;www.emotiv.com&quot;&gt;Emotiv&lt;/a&gt; or BioSemi EEG) and a software
+suite, it aims to improve our focus by giving us real-time neurofeedback on our
+current state of concentration. The Neuromancer package, whose (alpha) source can be found
+&lt;a href=&quot;https://github.com/dalequark/emotivExperiment&quot;&gt;here&lt;/a&gt;, consists of a Java backend,
+browser frontend, and a handful of Python scripts for data processing.  Neuromancer
+provides users with a concentration-based task while simultaneously measuring neural
+signals via EEG. After training a classifier that determines the relative face/place
+focus of a user, Neuromancer gives users real time neurofeedback on their focus
+by altering the presented stimulus.  fMRI studies have shown that such an experiment
+can improve participants’ performance on concentration tasks, even after the
+neurofeedback is removed, as compared to controls.  &lt;/p&gt;
+
+&lt;p&gt;More details to come soon. Stay tuned!&lt;/p&gt;
 
         </content>
     </entry>
@@ -174,7 +194,9 @@ this lovely picture of my brain, as well as the same picture in 3D.  At the begi
 
 &lt;p&gt;First, as far as connected necklaces go, it has a pretty small pendant with a powerful processor.  The trick is that the microcontroller controlling the tri-color LED pendant is actually hid behind my neck, and controls the LED via the super-thin wires in a headphone cable.  The clasp for the necklace is a headphone cable jack; I close the necklace by snapping the headphone cable jack into its socket, which also serves as a switch for the necklace.  You can read about how I worked with headphone cables in the &lt;a href=&quot;ttp://www.instructables.com/id/Electronics-Necklace-from-Headphone-Cable/?embed=flash&quot;&gt;Instructable&lt;/a&gt;.  &lt;/p&gt;
 
-&lt;p&gt;My end goal in making this necklace was to have it alert me when my cellphone rang.  I didn’t want to deal with convincing my phone to send out a bluetooth signal when I received a call, though, so I decided to have the LED light up when my phone emitted a high-frequency, ultrasonic pulse.  This was a pretty cheap solution, since it meant I only had to have a microphone connected to my microcontroller.  I also gave my pixel necklace a mode in which it lit up in response to distinct freqeuncy progressions (i.e. like those in Seven Nation Army).  Below is some code to do this that I haven’t looked at for months, that was informed by &lt;a href=&quot;http://blog.theultimatelabs.com/2013/05/wirelessly-communicating-with-arduino.html&quot;&gt;this code&lt;/a&gt;, so I’m sorry if it’s nonsensical.&lt;br /&gt;
+&lt;p&gt;My end goal in making this necklace was to have it alert me when my cellphone rang.  I didn’t want to deal with convincing my phone to send out a bluetooth signal when I received a call, though, so I decided to have the LED light up when my phone emitted a high-frequency, ultrasonic pulse.  This was a pretty cheap solution, since it meant I only had to have a microphone connected to my microcontroller.  I also gave my pixel necklace a mode in which it lit up in response to distinct freqeuncy progressions (i.e. like those in Seven Nation Army).  &lt;/p&gt;
+
+&lt;p&gt;Below is some code to do this that I haven’t looked at for months, that was informed by &lt;a href=&quot;http://blog.theultimatelabs.com/2013/05/wirelessly-communicating-with-arduino.html&quot;&gt;this code&lt;/a&gt;, so I’m sorry if it’s nonsensical.&lt;br /&gt;
  //TODO: Make sense of this code&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt; #include &amp;lt;avr/pgmspace.h&amp;gt;
