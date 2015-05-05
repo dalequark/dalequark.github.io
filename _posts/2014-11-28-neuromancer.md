@@ -24,7 +24,7 @@ Neuromancer is such a device for helping us improve our concentration. Comprised
 of an EEG headset (either an [Emotiv](www.emotiv.com) or BioSemi EEG) and a software
 suite, it aims to improve our focus by giving us real-time neurofeedback on our
 current state of concentration. The Neuromancer package, whose (alpha) source can be found
-[here](https://github.com/dalequark/emotivExperiment), consists of a Java backend,
+[here](https://github.com/dalequark/neuromancer), consists of a Java backend,
 browser frontend, and a handful of Python scripts for data processing.  Neuromancer
 provides users with a concentration-based task while simultaneously measuring neural
 signals via EEG. After training a classifier that determines the relative face/place
